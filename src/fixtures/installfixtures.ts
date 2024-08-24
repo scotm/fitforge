@@ -3,115 +3,44 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 
-import { z } from "zod";
 import { db } from "../server/db";
-import { category as categoryTable } from "../server/db/schema";
-import { equipment as equipmentTable } from "../server/db/schema";
-import { muscles as musclesTable } from "../server/db/schema";
-import { licence as licenceTable } from "../server/db/schema";
-import { exercises as exercisesTable } from "../server/db/schema";
+import {
+  category as categoryTable,
+  exercises as exercisesTable,
+  equipment as equipmentTable,
+  muscles as musclesTable,
+  licence as licenceTable,
+  exerciseToEquipment as exerciseToEquipmentTable,
+  exerciseToMuscles as exerciseToMusclesTable,
+} from "../server/db/schema";
 import TurndownService from "turndown";
+import {
+  categorySchema,
+  equipmentSchema,
+  exerciseBaseSchema,
+  licenceSchema,
+  muscleSchema,
+  translationSchema,
+} from "./fixtureSchemas";
+import { type z } from "zod";
+import { join } from "path";
 
 const turndownService = new TurndownService();
 
-const categorySchema = z.array(
-  z.object({
-    model: z.string(),
-    pk: z.number(),
-    fields: z.object({
-      name: z.string(),
-    }),
-  }),
-);
+async function readAndParseFile<T>(
+  filePath: string,
+  schema: z.ZodType<T>,
+): Promise<T> {
+  const file = Bun.file(join(__dirname, filePath));
+  const data = await file.json();
 
-const equipmentSchema = z.array(
-  z.object({
-    model: z.string(),
-    pk: z.number(),
-    fields: z.object({
-      name: z.string(),
-    }),
-  }),
-);
+  return schema.parse(data);
+}
 
-const muscleSchema = z.array(
-  z.object({
-    model: z.string(),
-    pk: z.number(),
-    fields: z.object({
-      name: z.string(),
-      is_front: z.boolean(),
-      name_en: z.string(),
-    }),
-  }),
-);
-
-const licenceSchema = z.array(
-  z.object({
-    model: z.string(),
-    pk: z.number(),
-    fields: z.object({
-      full_name: z.string(),
-      short_name: z.string(),
-      url: z.string().url(),
-    }),
-  }),
-);
-
-const translationSchema = z.array(
-  z.object({
-    model: z.string(),
-    pk: z.number(),
-    fields: z.object({
-      licence: z.number().optional(),
-      licence_title: z.string().optional(),
-      licence_object_url: z.string().optional(),
-      licence_author: z.string().optional(),
-      licence_author_url: z.string().optional(),
-      licence_derivative_source_url: z.string().optional(),
-      description: z.string(),
-      name: z.string(),
-      created: z.string().datetime(),
-      last_update: z.string().datetime(),
-      language: z.number(),
-      uuid: z.string(),
-      exercise_base: z.number(),
-    }),
-  }),
-);
-
-const exerciseBaseSchema = z.array(
-  z.object({
-    model: z.string(),
-    pk: z.number(),
-    fields: z.object({
-      license: z.number(),
-      license_title: z.string(),
-      license_object_url: z.string(),
-      license_author: z.string().nullable(),
-      license_author_url: z.string(),
-      license_derivative_source_url: z.string(),
-      uuid: z.string(),
-      category: z.number(),
-      variations: z.number().nullable(),
-      created: z.string().datetime(),
-      last_update: z.string().datetime(),
-      muscles: z.array(z.number()),
-      muscles_secondary: z.array(z.number()),
-      equipment: z.array(z.number()),
-    }),
-  }),
-);
-
-// get directory of this file
-const categoryFile = Bun.file(__dirname + "/categories.json");
-const categories = categorySchema.parse(await categoryFile.json());
-const equipmentFile = Bun.file(__dirname + "/equipment.json");
-const equipment = equipmentSchema.parse(await equipmentFile.json());
-const musclesFile = Bun.file(__dirname + "/muscles.json");
-const muscles = muscleSchema.parse(await musclesFile.json());
-const licencesFile = Bun.file(__dirname + "/licenses.json");
-const licences = licenceSchema.parse(await licencesFile.json());
+const categories = await readAndParseFile("/categories.json", categorySchema);
+const equipment = await readAndParseFile("/equipment.json", equipmentSchema);
+const muscles = await readAndParseFile("/muscles.json", muscleSchema);
+const licences = await readAndParseFile("/licenses.json", licenceSchema);
 const exercisesFile = Bun.file(__dirname + "/exercise-base-data.json");
 const unverifiedExercises = await exercisesFile.json();
 const filteredExercises = unverifiedExercises.filter(
@@ -155,13 +84,7 @@ const translationMap = new Map(
   translationsMapped.map((t) => [t.fields.exercise_base, t]),
 );
 
-console.log(translationsMapped);
-
-await db.delete(categoryTable);
-await db.delete(equipmentTable);
-await db.delete(musclesTable);
-await db.delete(licenceTable);
-await db.delete(exercisesTable);
+await eraseOldTables();
 
 for (const category of categories) {
   await db.insert(categoryTable).values({
@@ -201,4 +124,48 @@ for (const exercise of exercises) {
     name: translationMap.get(exercise.pk)?.fields.name ?? "",
     how_to_perform: translationMap.get(exercise.pk)?.fields.description ?? "",
   });
+  for (const muscleId of exercise.fields.muscles) {
+    await db.insert(exerciseToMusclesTable).values({
+      exerciseId: exercise.pk,
+      muscleId: muscleId,
+    });
+  }
+  for (const equipmentId of exercise.fields.equipment) {
+    await db.insert(exerciseToEquipmentTable).values({
+      exerciseId: exercise.pk,
+      equipmentId: equipmentId,
+    });
+  }
+}
+
+const goop = await db.query.exercises.findMany({
+  with: {
+    category: true,
+    licence: true,
+    muscles: {
+      with: {
+        muscles: true,
+      },
+    },
+    equipment: {
+      with: {
+        equipment: true,
+      },
+    },
+  },
+});
+
+console.dir(goop, { depth: null });
+
+async function eraseOldTables() {
+  const tables = [
+    categoryTable,
+    equipmentTable,
+    musclesTable,
+    licenceTable,
+    exercisesTable,
+  ];
+  for (const table of tables) {
+    await db.delete(table);
+  }
 }
