@@ -9,20 +9,20 @@ export default async function Home() {
   const hello = await api.post.hello({ text: "from tRPC" });
   const session = await getServerAuthSession();
 
-  const exercises = await api.exercises.getAll();
+  const exercises = await api.exercises.getAll({});
 
   return (
     <HydrateClient>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-          {exercises?.map((exercise) => (
+          {exercises?.items?.map((exercise) => (
             <div key={exercise.id}>
               <h2 className="text-2xl font-bold">{exercise.name}</h2>
               <p>{exercise.how_to_perform}</p>
               <div className="flex flex-col gap-2">
                 {exercise.equipment.map((equipment) => (
-                  <div key={equipment.p}>
-                    <p>{equipment.d}</p>
+                  <div key={equipment.id}>
+                    <p>{equipment.name}</p>
                   </div>
                 ))}
               </div>

@@ -1,48 +1,86 @@
+import { count, type TableConfig } from "drizzle-orm";
+import { type LibSQLDatabase } from "drizzle-orm/libsql";
+import { type SQLiteTableWithColumns } from "drizzle-orm/sqlite-core";
+import { z } from "zod";
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
 
+import { category, exercises as exercisesTable } from "~/server/db/schema";
+
+const DEFAULT_PAGE_SIZE = 12;
+
+const getRowCount = async <
+  T extends TableConfig,
+  K extends Record<string, unknown>,
+>(
+  db: LibSQLDatabase<K>,
+  table: SQLiteTableWithColumns<T>,
+) => {
+  const totalResult = await db.select({ count: count() }).from(table);
+  return totalResult[0]?.count ?? 0;
+};
+
 export const exercisesRouter = createTRPCRouter({
-  getAll: publicProcedure.query(async ({ ctx }) => {
-    const exercises = await ctx.db.query.exercises.findMany({
-      orderBy: (exercises, { desc }) => [desc(exercises.createdAt)],
-      columns: {
-        id: true,
-        name: true,
-        how_to_perform: true,
-        createdAt: true,
-        updatedAt: true,
-      },
-      with: {
-        category: true,
-        licence: true,
-        muscles: {
-          with: {
-            muscles: true,
+  getAll: publicProcedure
+    .input(
+      z.object({
+        page: z.number().optional(),
+        categoryId: z.number().optional(),
+      }),
+    )
+    .query(async ({ ctx, input }) => {
+      const page = input.page ?? 0;
+
+      const totalItems = await getRowCount(ctx.db, exercisesTable);
+
+      const exercises = await ctx.db.query.exercises.findMany({
+        offset: page * DEFAULT_PAGE_SIZE,
+        limit: DEFAULT_PAGE_SIZE,
+        orderBy: (exercises, { desc }) => [desc(exercises.createdAt)],
+        where: (exercises, { eq }) =>
+          input.categoryId
+            ? eq(exercises.categoryId, input.categoryId)
+            : undefined,
+        columns: {
+          id: true,
+          name: true,
+          how_to_perform: true,
+          createdAt: true,
+          updatedAt: true,
+        },
+        with: {
+          category: true,
+          licence: true,
+          muscles: {
+            with: {
+              muscles: true,
+            },
+          },
+          equipment: {
+            with: {
+              equipment: true,
+            },
           },
         },
-        equipment: {
-          with: {
-            equipment: true,
-          },
-        },
-      },
-    });
+      });
 
-    if (!exercises) {
-      return null;
-    }
+      return {
+        page,
+        totalItems,
+        hasNextPage: page < totalItems / DEFAULT_PAGE_SIZE,
+        items: exercises.map((exercise) => ({
+          id: exercise.id,
+          name: exercise.name,
+          how_to_perform: exercise.how_to_perform,
+          createdAt: exercise.createdAt,
+          updatedAt: exercise.updatedAt,
+          category: exercise.category.name,
+          licence: exercise.licence.full_name,
 
-    return exercises.map((exercise) => ({
-      id: exercise.id,
-      name: exercise.name,
-      how_to_perform: exercise.how_to_perform,
-      createdAt: exercise.createdAt,
-      updatedAt: exercise.updatedAt,
-      category: exercise.category.name,
-      licence: exercise.licence.full_name,
-      equipment: exercise.equipment.map((equipment) => ({
-        p: equipment.equipment.id,
-        d: equipment.equipment.name,
-      })),
-    }));
-  }),
+          equipment: exercise.equipment.map((equipment) => ({
+            id: equipment.equipment.id,
+            name: equipment.equipment.name,
+          })),
+        })),
+      };
+    }),
 });
