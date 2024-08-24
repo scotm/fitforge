@@ -4,7 +4,7 @@ import { type LibSQLDatabase } from "drizzle-orm/libsql";
 import { type SQLiteTableWithColumns } from "drizzle-orm/sqlite-core";
 import { z } from "zod";
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
-import { exercises as exercisesTable } from "~/server/db/schema";
+import { exercises as exercisesTable, muscles } from "~/server/db/schema";
 
 const getRowCount = async <
   T extends TableConfig,
@@ -72,11 +72,14 @@ export const exercisesRouter = createTRPCRouter({
           createdAt: exercise.createdAt,
           updatedAt: exercise.updatedAt,
           category: exercise.category.name,
-          licence: exercise.licence.full_name,
-
+          licence: exercise.licence.short_name,
           equipment: exercise.equipment.map((equipment) => ({
             id: equipment.equipment.id,
             name: equipment.equipment.name,
+          })),
+          muscles: exercise.muscles.map((muscle) => ({
+            id: muscle.muscles.id,
+            name: muscle.muscles.name,
           })),
         })),
       };

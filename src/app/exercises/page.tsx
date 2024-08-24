@@ -1,7 +1,7 @@
 "use client";
 import React, {
-  Dispatch,
-  SetStateAction,
+  type Dispatch,
+  type SetStateAction,
   useContext,
   useEffect,
   useState,
@@ -20,6 +20,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { ExercisePagination } from "@/components/ExercisePage/ExercisePagination";
+import { DropdownMenuCheckboxes } from "@/components/DropdownCheckboxes";
 
 type ExerciseData = {
   exercise: RouterOutputs["exercises"]["getAll"]["items"][number];
@@ -36,6 +37,11 @@ const Exercise = ({ exercise }: ExerciseData) => {
         {exercise.equipment.map((equipment) => (
           <div key={equipment.id} className="flex flex-col gap-2">
             <p>{equipment.name}</p>
+          </div>
+        ))}
+        {exercise.muscles.map((muscle) => (
+          <div key={muscle.id} className="flex flex-col gap-2">
+            <p>{muscle.name}</p>
           </div>
         ))}
       </div>
@@ -57,7 +63,6 @@ const ExerciseList: React.FC<ExerciseListProps> = ({ selectedCategory }) => {
     },
     {
       placeholderData: (p) => {
-        if (!p) return undefined;
         return p;
       },
     },
@@ -67,7 +72,7 @@ const ExerciseList: React.FC<ExerciseListProps> = ({ selectedCategory }) => {
     if (data?.totalItems && maxPage === 0) {
       setMaxPage(Math.ceil(data.totalItems / DEFAULT_PAGE_SIZE) - 1);
     }
-  }, [data]);
+  }, [data, maxPage]);
 
   return status === "pending" ? (
     <p>Loading...</p>
@@ -115,10 +120,17 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({
 
 export const ExercisePage = () => {
   const [selectedCategory, setSelectedCategory] = useState<number>(0);
-
+  const [muscleFilter, setMuscleFilter] = React.useState<number[]>([]);
   return (
-    <div>
-      <CategorySelector setSelectedCategory={setSelectedCategory} />
+    <div className="mx-auto max-w-screen-md p-4">
+      <div className="my-2 grid grid-cols-3 gap-4">
+        <CategorySelector setSelectedCategory={setSelectedCategory} />
+        <DropdownMenuCheckboxes
+          muscleFilter={muscleFilter}
+          setMuscleFilter={setMuscleFilter}
+        />
+        <p>Testing</p>
+      </div>
       <ExerciseList selectedCategory={selectedCategory} />
     </div>
   );
