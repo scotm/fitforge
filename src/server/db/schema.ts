@@ -175,6 +175,9 @@ export const exercises = createTable(
     categoryId: int("category_id", { mode: "number" })
       .notNull()
       .references(() => category.id),
+    licenceId: int("licence_id", { mode: "number" })
+      .notNull()
+      .references(() => licence.id),
     name: text("name", { length: 256 }),
     how_to_perform: text("how_to_perform", { length: 5000 }),
     createdAt: int("created_at", { mode: "timestamp" })
@@ -194,8 +197,12 @@ export const exercisesRelations = relations(exercises, ({ one, many }) => ({
     fields: [exercises.categoryId],
     references: [category.id],
   }),
+  licence: one(licence, {
+    fields: [exercises.licenceId],
+    references: [licence.id],
+  }),
   muscles: many(exerciseToMuscles),
-  //   // muscles_secondary: many(muscles),
+  // muscles_secondary: many(muscles),
   equipment: many(exerciseToEquipment),
 }));
 
@@ -232,8 +239,14 @@ export const exerciseToMuscles = createTable(
 export const exerciseToMusclesRelations = relations(
   exerciseToMuscles,
   ({ one }) => ({
-    exercises: one(exercises),
-    muscles: one(muscles),
+    exercises: one(exercises, {
+      fields: [exerciseToMuscles.exerciseId],
+      references: [exercises.id],
+    }),
+    muscles: one(muscles, {
+      fields: [exerciseToMuscles.muscleId],
+      references: [muscles.id],
+    }),
   }),
 );
 
@@ -255,9 +268,19 @@ export const exerciseToEquipment = createTable(
   }),
 );
 
-// export const equipmentRelations = relations(equipment, ({ many }) => ({
-//   exercises: many(exercises),
-// }));
+export const exerciseToEquipmentRelations = relations(
+  exerciseToEquipment,
+  ({ one }) => ({
+    exercises: one(exercises, {
+      fields: [exerciseToEquipment.exerciseId],
+      references: [exercises.id],
+    }),
+    equipment: one(equipment, {
+      fields: [exerciseToEquipment.equipmentId],
+      references: [equipment.id],
+    }),
+  }),
+);
 
 export const licence = createTable(
   "licence",
@@ -277,3 +300,7 @@ export const licence = createTable(
     nameIndex: index("licence_name_idx").on(example.full_name),
   }),
 );
+
+export const licenceRelations = relations(licence, ({ many }) => ({
+  exercises: many(exercises),
+}));
