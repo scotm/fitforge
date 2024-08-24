@@ -1,17 +1,25 @@
 "use client";
-import React, { Dispatch, SetStateAction, useContext, useState } from "react";
+import React, {
+  Dispatch,
+  SetStateAction,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 
 import Markdown from "react-markdown";
-import { Button } from "~/components/ui/button";
+import { DEFAULT_PAGE_SIZE } from "@lib/constants";
+import { cn } from "@/lib/utils";
+import { BaselineContext } from "~/state/BaselineContextProvider";
+import { api, type RouterOutputs } from "~/trpc/react";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "~/components/ui/select";
-import { BaselineContext } from "~/state/BaselineContextProvider";
-import { api, type RouterOutputs } from "~/trpc/react";
+} from "@/components/ui/select";
+import { ExercisePagination } from "@/components/ExercisePage/ExercisePagination";
 
 type ExerciseData = {
   exercise: RouterOutputs["exercises"]["getAll"]["items"][number];
@@ -35,77 +43,83 @@ const Exercise = ({ exercise }: ExerciseData) => {
   );
 };
 
-const ExerciseList = ({
-  selectedCategory,
-  page,
-  setPage,
-}: {
+type ExerciseListProps = {
   selectedCategory: number;
-  page: number;
-  setPage: Dispatch<SetStateAction<number>>;
-}) => {
-  const { data, isLoading, error } = api.exercises.getAll.useQuery({
-    page: page,
-    categoryId: selectedCategory,
-  });
+};
 
-  if (isLoading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error.message}</p>;
-  if (!data || data.items.length === 0) return <p>No data</p>;
-  return (
+const ExerciseList: React.FC<ExerciseListProps> = ({ selectedCategory }) => {
+  const [page, setPage] = useState(0);
+  const [maxPage, setMaxPage] = useState(0);
+  const { data, error, status, isFetching } = api.exercises.getAll.useQuery(
+    {
+      page: page,
+      categoryId: selectedCategory,
+    },
+    {
+      placeholderData: (p) => {
+        if (!p) return undefined;
+        return p;
+      },
+    },
+  );
+
+  useEffect(() => {
+    if (data?.totalItems && maxPage === 0) {
+      setMaxPage(Math.ceil(data.totalItems / DEFAULT_PAGE_SIZE) - 1);
+    }
+  }, [data]);
+
+  return status === "pending" ? (
+    <p>Loading...</p>
+  ) : status === "error" ? (
+    <p>Error: {error.message}</p>
+  ) : (
     <>
+      <ExercisePagination setPage={setPage} page={page} maxPage={maxPage} />
       {data.totalItems} items
-      {data.items.map((exercise) => (
-        <Exercise key={exercise.id} exercise={exercise} />
-      ))}
-      <div className="flex flex-row gap-2">
-        <Button
-          onClick={() => setPage((page) => (page === 0 ? page : page - 1))}
-          disabled={page === 0}
-        >
-          Previous
-        </Button>
-        <Button
-          onClick={() =>
-            setPage((page) => (data.hasNextPage ? page + 1 : page))
-          }
-          disabled={!data.hasNextPage}
-        >
-          Next
-        </Button>
+      <div className={cn(isFetching && "bg-gray-200")}>
+        {data.items.map((exercise) => (
+          <Exercise key={exercise.id} exercise={exercise} />
+        ))}
       </div>
     </>
   );
 };
 
-export const ExercisePage = () => {
-  const [page, setPage] = useState(0);
-  const [selectedCategory, setSelectedCategory] = useState<number>(0);
-  const { categories } = useContext(BaselineContext);
+type CategorySelectorProps = {
+  setSelectedCategory: Dispatch<SetStateAction<number>>;
+};
 
-  console.log(categories);
+const CategorySelector: React.FC<CategorySelectorProps> = ({
+  setSelectedCategory,
+}) => {
+  const { categories } = useContext(BaselineContext);
+  return (
+    <Select
+      onValueChange={(value) => setSelectedCategory(Number.parseInt(value))}
+    >
+      <SelectTrigger className="w-[180px]">
+        <SelectValue placeholder="All" />
+      </SelectTrigger>
+      <SelectContent>
+        <SelectItem value="0">All</SelectItem>
+        {categories.map((category) => (
+          <SelectItem key={category.id} value={category.id.toString()}>
+            {category.name}
+          </SelectItem>
+        ))}
+      </SelectContent>
+    </Select>
+  );
+};
+
+export const ExercisePage = () => {
+  const [selectedCategory, setSelectedCategory] = useState<number>(0);
 
   return (
     <div>
-      <Select
-        onValueChange={(value) => setSelectedCategory(Number.parseInt(value))}
-      >
-        <SelectTrigger className="w-[180px]">
-          <SelectValue placeholder="Category" />
-        </SelectTrigger>
-        <SelectContent>
-          {categories.map((category) => (
-            <SelectItem key={category.id} value={category.id.toString()}>
-              {category.name}
-            </SelectItem>
-          ))}
-        </SelectContent>
-      </Select>
-      <ExerciseList
-        selectedCategory={selectedCategory}
-        page={page}
-        setPage={setPage}
-      />
+      <CategorySelector setSelectedCategory={setSelectedCategory} />
+      <ExerciseList selectedCategory={selectedCategory} />
     </div>
   );
 };

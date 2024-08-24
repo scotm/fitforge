@@ -1,12 +1,10 @@
+import { DEFAULT_PAGE_SIZE } from "@/lib/constants";
 import { count, type TableConfig } from "drizzle-orm";
 import { type LibSQLDatabase } from "drizzle-orm/libsql";
 import { type SQLiteTableWithColumns } from "drizzle-orm/sqlite-core";
 import { z } from "zod";
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
-
-import { category, exercises as exercisesTable } from "~/server/db/schema";
-
-const DEFAULT_PAGE_SIZE = 12;
+import { exercises as exercisesTable } from "~/server/db/schema";
 
 const getRowCount = async <
   T extends TableConfig,
@@ -35,7 +33,7 @@ export const exercisesRouter = createTRPCRouter({
       const exercises = await ctx.db.query.exercises.findMany({
         offset: page * DEFAULT_PAGE_SIZE,
         limit: DEFAULT_PAGE_SIZE,
-        orderBy: (exercises, { desc }) => [desc(exercises.createdAt)],
+        orderBy: (exercises, { asc }) => [asc(exercises.name)],
         where: (exercises, { eq }) =>
           input.categoryId
             ? eq(exercises.categoryId, input.categoryId)
