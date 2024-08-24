@@ -9,6 +9,7 @@ import { category as categoryTable } from "../server/db/schema";
 import { equipment as equipmentTable } from "../server/db/schema";
 import { muscles as musclesTable } from "../server/db/schema";
 import { licence as licenceTable } from "../server/db/schema";
+import { exercises as exercisesTable } from "../server/db/schema";
 import TurndownService from "turndown";
 
 const turndownService = new TurndownService();
@@ -87,12 +88,12 @@ const exerciseBaseSchema = z.array(
       license: z.number(),
       license_title: z.string(),
       license_object_url: z.string(),
-      license_author: z.string(),
+      license_author: z.string().nullable(),
       license_author_url: z.string(),
       license_derivative_source_url: z.string(),
       uuid: z.string(),
       category: z.number(),
-      variations: z.number(),
+      variations: z.number().nullable(),
       created: z.string().datetime(),
       last_update: z.string().datetime(),
       muscles: z.array(z.number()),
@@ -111,13 +112,34 @@ const musclesFile = Bun.file(__dirname + "/muscles.json");
 const muscles = muscleSchema.parse(await musclesFile.json());
 const licencesFile = Bun.file(__dirname + "/licenses.json");
 const licences = licenceSchema.parse(await licencesFile.json());
+const exercisesFile = Bun.file(__dirname + "/exercise-base-data.json");
+const unverifiedExercises = await exercisesFile.json();
+const filteredExercises = unverifiedExercises.filter(
+  (x: unknown) =>
+    typeof x === "object" &&
+    x !== null &&
+    "model" in x &&
+    typeof x.model === "string" &&
+    x.model === "exercises.exercisebase",
+);
+const exercises = exerciseBaseSchema.parse(filteredExercises);
 const translationFile = Bun.file(__dirname + "/translations.json");
 const unverifiedTranslations = await translationFile.json();
 
 const translations = translationSchema.parse(
   unverifiedTranslations.filter(
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    (x: any) => x.model === "exercises.exercise" && x.fields.language === 2,
+    (x: unknown) =>
+      typeof x === "object" &&
+      x !== null &&
+      "model" in x &&
+      typeof x.model === "string" &&
+      x.model === "exercises.exercise" &&
+      "fields" in x &&
+      typeof x.fields === "object" &&
+      x.fields !== null &&
+      "language" in x.fields &&
+      typeof x.fields.language === "number" &&
+      x.fields.language === 2,
   ),
 );
 
@@ -129,12 +151,17 @@ const translationsMapped = translations.map((translation) => ({
   },
 }));
 
+const translationMap = new Map(
+  translationsMapped.map((t) => [t.fields.exercise_base, t]),
+);
+
 console.log(translationsMapped);
 
 await db.delete(categoryTable);
 await db.delete(equipmentTable);
 await db.delete(musclesTable);
 await db.delete(licenceTable);
+await db.delete(exercisesTable);
 
 for (const category of categories) {
   await db.insert(categoryTable).values({
@@ -163,5 +190,15 @@ for (const licence of licences) {
   await db.insert(licenceTable).values({
     id: licence.pk,
     ...licence.fields,
+  });
+}
+
+for (const exercise of exercises) {
+  await db.insert(exercisesTable).values({
+    id: exercise.pk,
+    categoryId: exercise.fields.category,
+    licenceId: exercise.fields.license,
+    name: translationMap.get(exercise.pk)?.fields.name ?? "",
+    how_to_perform: translationMap.get(exercise.pk)?.fields.description ?? "",
   });
 }
