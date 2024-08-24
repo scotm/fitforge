@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 
 import Markdown from "react-markdown";
+import { Button } from "~/components/ui/button";
 import { api, type RouterOutputs } from "~/trpc/react";
 
 type ExerciseData = {
@@ -44,20 +45,20 @@ export const ExercisePage = () => {
         <Exercise key={exercise.id} exercise={exercise} />
       ))}
       <div className="flex flex-row gap-2">
-        <button
+        <Button
           onClick={() => setPage((page) => (page === 0 ? page : page - 1))}
           disabled={page === 0}
         >
           Previous
-        </button>
-        <button
+        </Button>
+        <Button
           onClick={() =>
             setPage((page) => (data.hasNextPage ? page + 1 : page))
           }
           disabled={!data.hasNextPage}
         >
           Next
-        </button>
+        </Button>
       </div>
     </div>
   );
