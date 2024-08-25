@@ -52,7 +52,7 @@ const filteredExercises = unverifiedExercises.filter(
     x.model === "exercises.exercisebase",
 );
 const exercises = exerciseBaseSchema.parse(filteredExercises);
-const translationFile = Bun.file(__dirname + "/translations.json");
+const translationFile = Bun.file(__dirname + "/translations2.json");
 const unverifiedTranslations = await translationFile.json();
 
 const translations = translationSchema.parse(
@@ -80,9 +80,21 @@ const translationsMapped = translations.map((translation) => ({
   },
 }));
 
-const translationMap = new Map(
-  translationsMapped.map((t) => [t.fields.exercise_base, t]),
-);
+type ArrayElement<ArrayType extends readonly unknown[]> =
+  ArrayType extends readonly (infer ElementType)[] ? ElementType : never;
+
+const translationMap = new Map<
+  number,
+  ArrayElement<typeof translationsMapped>
+>();
+
+translationsMapped.forEach((translation) => {
+  if (translationMap.has(translation.fields.exercise_base)) {
+    console.log("Duplicate key found");
+    return;
+  }
+  translationMap.set(translation.fields.exercise_base, translation);
+});
 
 await eraseOldTables();
 
@@ -117,6 +129,10 @@ for (const licence of licences) {
 }
 
 for (const exercise of exercises) {
+  if (!translationMap.has(exercise.pk)) {
+    console.log("Missing translation for", exercise.pk);
+    continue;
+  }
   await db.insert(exercisesTable).values({
     id: exercise.pk,
     categoryId: exercise.fields.category,
@@ -137,25 +153,6 @@ for (const exercise of exercises) {
     });
   }
 }
-
-const goop = await db.query.exercises.findMany({
-  with: {
-    category: true,
-    licence: true,
-    muscles: {
-      with: {
-        muscles: true,
-      },
-    },
-    equipment: {
-      with: {
-        equipment: true,
-      },
-    },
-  },
-});
-
-console.dir(goop, { depth: null });
 
 async function eraseOldTables() {
   const tables = [
