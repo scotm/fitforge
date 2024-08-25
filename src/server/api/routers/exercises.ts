@@ -4,7 +4,7 @@ import { type LibSQLDatabase } from "drizzle-orm/libsql";
 import { type SQLiteTableWithColumns } from "drizzle-orm/sqlite-core";
 import { z } from "zod";
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
-import { exercises as exercisesTable, muscles } from "~/server/db/schema";
+import { exercises as exercisesTable } from "~/server/db/schema";
 
 const getRowCount = async <
   T extends TableConfig,
