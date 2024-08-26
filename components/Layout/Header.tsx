@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { getServerAuthSession } from "~/server/auth";
-import { SignInOrOut } from "../signInOrOut";
+import UserMenu from "./UserMenu";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -9,8 +8,6 @@ const navigation = [
 ];
 
 export default async function Header() {
-  const session = await getServerAuthSession();
-
   return (
     <header className="bg-white">
       <nav
@@ -35,7 +32,7 @@ export default async function Header() {
           ))}
         </div>
         <div className="lg:flex lg:flex-1 lg:justify-end">
-          <SignInOrOut session={session} />
+          <UserMenu />
         </div>
       </nav>
     </header>

@@ -28,9 +28,7 @@ export default function RootLayout({
       <body>
         <Header />
         <main className="grid min-h-full place-items-center bg-white px-6 py-4 sm:py-8 lg:px-8">
-          <TRPCReactProvider>
-            <BaselineProvider>{children}</BaselineProvider>
-          </TRPCReactProvider>
+          <TRPCReactProvider>{children}</TRPCReactProvider>
         </main>
         <Footer />
       </body>

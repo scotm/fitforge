@@ -12,14 +12,9 @@ export default async function Page() {
   if (!user) return <div>User not found</div>;
 
   return (
-    <div>
+    <div className="mx-auto min-w-[540px]">
       <h1 className="mb-4 text-3xl font-bold">User Page</h1>
       <UserDetails user={user} />
-      {(Object.keys(user) as (keyof typeof user)[]).map((key) => (
-        <div key={key}>
-          {key} - {user[key]?.toString()}
-        </div>
-      ))}
     </div>
   );
 }

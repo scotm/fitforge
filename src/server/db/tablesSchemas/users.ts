@@ -40,13 +40,15 @@ export const users = createTable("user", {
   emailVerified: int("email_verified", {
     mode: "timestamp",
   }).default(sql`(unixepoch())`),
-  defaultWeightUnit: text("name", { enum: defaultWeightUnit })
+  defaultWeightUnit: text("default_weight_unit", { enum: defaultWeightUnit })
     .default("kg")
     .notNull(),
-  defaultDistanceUnit: text("name", { enum: defaultDistanceUnit })
+  defaultDistanceUnit: text("default_distance_unit", {
+    enum: defaultDistanceUnit,
+  })
     .default("km")
     .notNull(),
-  defaultHeightUnit: text("name", { enum: defaultHeightUnit })
+  defaultHeightUnit: text("default_height_unit", { enum: defaultHeightUnit })
     .default("cm")
     .notNull(),
   phoneNumber: text("phone_number", { length: 15 }).default("").notNull(),

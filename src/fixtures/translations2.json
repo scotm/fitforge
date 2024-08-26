@@ -1748,25 +1748,6 @@
     }
   },
   {
-    "pk": 208,
-    "model": "exercises.exercise",
-    "fields": {
-      "description": "<p>Hold bar with reverse (or \"overhand\") grip, palms facing the floor.</p>",
-      "license": 1,
-      "created": "2023-08-06T08:17:17.349Z",
-      "license_title": "",
-      "uuid": "438678dc-5a62-4496-9458-341af0616626",
-      "last_update": "2023-12-26T16:43:05.887Z",
-      "language": 2,
-      "exercise_base": 493,
-      "license_author_url": "",
-      "license_derivative_source_url": "",
-      "license_author": "tuckerm",
-      "license_object_url": "",
-      "name": "Reverse Bar Curl"
-    }
-  },
-  {
     "pk": 209,
     "model": "exercises.exercise",
     "fields": {
@@ -6593,25 +6574,6 @@
     }
   },
   {
-    "pk": 2077,
-    "model": "exercises.exercise",
-    "fields": {
-      "description": "When creating a workout based on time, add this to add rest time in the program",
-      "license": 2,
-      "created": "2023-08-06T08:17:17.349Z",
-      "license_title": "",
-      "uuid": "b2cae6bf-a383-42cc-92ca-4c06eb8d14fc",
-      "last_update": "2023-12-26T16:47:40.700Z",
-      "language": 2,
-      "exercise_base": 1114,
-      "license_author_url": "",
-      "license_derivative_source_url": "",
-      "license_author": "philip",
-      "license_object_url": "",
-      "name": "Rest (for timed workouts)"
-    }
-  },
-  {
     "pk": 2078,
     "model": "exercises.exercise",
     "fields": {
@@ -6646,45 +6608,7 @@
       "license_derivative_source_url": "",
       "license_author": "philip",
       "license_object_url": "",
-      "name": "Dumbbell farmer's carrie"
-    }
-  },
-  {
-    "pk": 2086,
-    "model": "exercises.exercise",
-    "fields": {
-      "description": "Remo en maquina o polea con barra larga...",
-      "license": 2,
-      "created": "2023-08-06T08:17:17.349Z",
-      "license_title": "",
-      "uuid": "52db74e5-ca32-4811-a0d5-3c667e4c8f7b",
-      "last_update": "2023-12-26T16:48:12.117Z",
-      "language": 2,
-      "exercise_base": 1117,
-      "license_author_url": "",
-      "license_derivative_source_url": "",
-      "license_author": "Franpol",
-      "license_object_url": "",
-      "name": "Remo maquina abierto"
-    }
-  },
-  {
-    "pk": 2087,
-    "model": "exercises.exercise",
-    "fields": {
-      "description": "Remo en maquina o maquina de polea con barra ancha y agarre supino",
-      "license": 2,
-      "created": "2023-08-06T08:17:17.349Z",
-      "license_title": "",
-      "uuid": "180b21d9-7204-4076-95a3-397f912ff456",
-      "last_update": "2023-12-26T16:47:40.828Z",
-      "language": 2,
-      "exercise_base": 1118,
-      "license_author_url": "",
-      "license_derivative_source_url": "",
-      "license_author": "Franpol",
-      "license_object_url": "",
-      "name": "Remo maquina abierto supino"
+      "name": "Dumbbell farmer's carry"
     }
   },
   {
