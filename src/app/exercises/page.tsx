@@ -1,11 +1,5 @@
 "use client";
-import React, {
-  type Dispatch,
-  type SetStateAction,
-  useContext,
-  useEffect,
-  useState,
-} from "react";
+import React, { useContext, useEffect } from "react";
 
 import Markdown from "react-markdown";
 import { DEFAULT_PAGE_SIZE } from "@lib/constants";
@@ -54,8 +48,7 @@ type ExerciseListProps = {
 };
 
 const ExerciseList: React.FC<ExerciseListProps> = ({ selectedCategory }) => {
-  const [page, setPage] = useState(0);
-  const [maxPage, setMaxPage] = useState(0);
+  const { page, setPage, maxPage, setMaxPage } = useContext(BaselineContext);
   const { data, error, status, isFetching } = api.exercises.getAll.useQuery(
     {
       page: page,
@@ -69,10 +62,14 @@ const ExerciseList: React.FC<ExerciseListProps> = ({ selectedCategory }) => {
   );
 
   useEffect(() => {
-    if (data?.totalItems && maxPage === 0) {
-      setMaxPage(Math.ceil(data.totalItems / DEFAULT_PAGE_SIZE) - 1);
+    if (data?.totalItems) {
+      setMaxPage((prevMaxPage) =>
+        prevMaxPage === 0
+          ? Math.ceil(data.totalItems / DEFAULT_PAGE_SIZE) - 1
+          : prevMaxPage,
+      );
     }
-  }, [data, maxPage]);
+  }, [data, setMaxPage]);
 
   return status === "pending" ? (
     <p>Loading...</p>
@@ -91,14 +88,10 @@ const ExerciseList: React.FC<ExerciseListProps> = ({ selectedCategory }) => {
   );
 };
 
-type CategorySelectorProps = {
-  setSelectedCategory: Dispatch<SetStateAction<number>>;
-};
+type CategorySelectorProps = object;
 
-const CategorySelector: React.FC<CategorySelectorProps> = ({
-  setSelectedCategory,
-}) => {
-  const { categories } = useContext(BaselineContext);
+const CategorySelector: React.FC<CategorySelectorProps> = ({}) => {
+  const { categories, setSelectedCategory } = useContext(BaselineContext);
   return (
     <Select
       onValueChange={(value) => setSelectedCategory(Number.parseInt(value))}
@@ -119,12 +112,12 @@ const CategorySelector: React.FC<CategorySelectorProps> = ({
 };
 
 export const ExercisePage = () => {
-  const [selectedCategory, setSelectedCategory] = useState<number>(0);
-  const [muscleFilter, setMuscleFilter] = React.useState<number[]>([]);
+  const { selectedCategory, muscleFilter, setMuscleFilter } =
+    useContext(BaselineContext);
   return (
     <div className="mx-auto max-w-screen-md p-4">
       <div className="my-2 grid grid-cols-3 gap-4">
-        <CategorySelector setSelectedCategory={setSelectedCategory} />
+        <CategorySelector />
         <DropdownMenuCheckboxes
           muscleFilter={muscleFilter}
           setMuscleFilter={setMuscleFilter}

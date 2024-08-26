@@ -17,7 +17,7 @@ export const ExercisePagination: React.FC<ExercisePaginationProps> = ({
   plusOrMinus = DEFAULT_PLUS_OR_MINUS,
 }) => {
   return (
-    <div className="flex flex-row gap-2">
+    <div className="grid grid-cols-5 gap-2">
       <Button
         onClick={() =>
           setPage((page) =>

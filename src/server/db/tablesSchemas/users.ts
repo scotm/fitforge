@@ -2,6 +2,12 @@ import { createTable } from "../utils";
 import { index, int, primaryKey, text } from "drizzle-orm/sqlite-core";
 import { relations, sql } from "drizzle-orm";
 import { type AdapterAccount } from "next-auth/adapters";
+import {
+  defaultDistanceUnit,
+  defaultGenderOptions,
+  defaultHeightUnit,
+  defaultWeightUnit,
+} from "@/lib/constants";
 
 export const posts = createTable(
   "post",
@@ -34,8 +40,23 @@ export const users = createTable("user", {
   emailVerified: int("email_verified", {
     mode: "timestamp",
   }).default(sql`(unixepoch())`),
+  defaultWeightUnit: text("name", { enum: defaultWeightUnit })
+    .default("kg")
+    .notNull(),
+  defaultDistanceUnit: text("name", { enum: defaultDistanceUnit })
+    .default("km")
+    .notNull(),
+  defaultHeightUnit: text("name", { enum: defaultHeightUnit })
+    .default("cm")
+    .notNull(),
+  phoneNumber: text("phone_number", { length: 15 }).default("").notNull(),
+  birthdate: int("birthdate", { mode: "timestamp" }),
+  height: int("height", { mode: "number" }),
+  gender: text("gender", { enum: defaultGenderOptions }),
   image: text("image", { length: 255 }),
 });
+
+export type NewUser = typeof users.$inferInsert;
 
 export const usersRelations = relations(users, ({ many }) => ({
   accounts: many(accounts),
