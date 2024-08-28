@@ -3,8 +3,23 @@ import { count, type TableConfig } from "drizzle-orm";
 import { type LibSQLDatabase } from "drizzle-orm/libsql";
 import { type SQLiteTableWithColumns } from "drizzle-orm/sqlite-core";
 import { z } from "zod";
-import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
-import { exercises as exercisesTable } from "~/server/db/schema";
+import { zodResponseFormat } from "openai/helpers/zod";
+import {
+  createTRPCRouter,
+  protectedProcedure,
+  publicProcedure,
+} from "~/server/api/trpc";
+import { category, exercises as exercisesTable } from "~/server/db/schema";
+
+import OpenAI from "openai";
+import { env } from "~/env";
+
+const exerciseSchema = z.object({
+  name: z.string(),
+  how_to_perform: z.string(),
+  equipment: z.array(z.string()),
+  muscles: z.array(z.string()),
+});
 
 const getRowCount = async <
   T extends TableConfig,
@@ -83,5 +98,39 @@ export const exercisesRouter = createTRPCRouter({
           })),
         })),
       };
+    }),
+  addExerciseWithAI: protectedProcedure
+    .input(
+      z.object({
+        name: z.string().min(1),
+        categoryId: z.number().optional(),
+        description: z.string().min(1),
+        licenseId: z.number().optional(),
+      }),
+    )
+    .mutation(async ({ ctx, input }) => {
+      if (!env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY not set");
+
+      const cat = ctx.db.select().from(category);
+
+      const client = new OpenAI({ apiKey: env.OPENAI_API_KEY });
+      const chatCompletion = await client.chat.completions.create({
+        messages: [
+          {
+            role: "system",
+            content:
+              "You are a helpful assistant, and you are very good at writing detailed summaries of physical exercises.",
+          },
+          { role: "user", content: "Say this is a test" },
+        ],
+        model: "gpt-3.5-turbo",
+        response_format: zodResponseFormat(exerciseSchema, "exercise"),
+      });
+      const response = chatCompletion.choices[0]?.message;
+      if (response?.content) {
+        const parsedResponse = exerciseSchema.parse(response.content);
+        console.log(parsedResponse);
+        return parsedResponse;
+      }
     }),
 });

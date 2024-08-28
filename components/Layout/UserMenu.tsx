@@ -1,7 +1,6 @@
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import { Link } from "lucide-react";
-import { type Session } from "next-auth";
+import Link from "next/link";
 import { getServerAuthSession } from "~/server/auth";
 
 const solutions = [
