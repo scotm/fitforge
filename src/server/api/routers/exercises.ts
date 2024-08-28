@@ -9,7 +9,7 @@ import {
   protectedProcedure,
   publicProcedure,
 } from "~/server/api/trpc";
-import { category, exercises as exercisesTable } from "~/server/db/schema";
+import { exercises as exercisesTable } from "~/server/db/schema";
 
 import OpenAI from "openai";
 import { env } from "~/env";
@@ -105,13 +105,12 @@ export const exercisesRouter = createTRPCRouter({
         name: z.string().min(1),
         categoryId: z.number().optional(),
         description: z.string().min(1),
-        licenseId: z.number().optional(),
       }),
     )
-    .mutation(async ({ ctx, input }) => {
+    .mutation(async ({}) => {
       if (!env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY not set");
 
-      const cat = ctx.db.select().from(category);
+      // const cat = ctx.db.select().from(category);
 
       const client = new OpenAI({ apiKey: env.OPENAI_API_KEY });
       const chatCompletion = await client.chat.completions.create({

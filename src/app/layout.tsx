@@ -4,7 +4,6 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 
 import { TRPCReactProvider } from "~/trpc/react";
-import { BaselineProvider } from "~/state/BaselineContextProvider";
 import Footer from "@/components/Layout/Footer";
 import Header from "@/components/Layout/Header";
 
