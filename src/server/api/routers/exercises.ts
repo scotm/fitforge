@@ -1,9 +1,8 @@
 import { DEFAULT_PAGE_SIZE } from "@/lib/constants";
-import { count, type TableConfig } from "drizzle-orm";
+import { count, eq, type TableConfig } from "drizzle-orm";
 import { type LibSQLDatabase } from "drizzle-orm/libsql";
 import { type SQLiteTableWithColumns } from "drizzle-orm/sqlite-core";
 import { z } from "zod";
-import { zodResponseFormat } from "openai/helpers/zod";
 import {
   createTRPCRouter,
   protectedProcedure,
@@ -12,14 +11,6 @@ import {
 import { exercises as exercisesTable } from "~/server/db/schema";
 
 import OpenAI from "openai";
-import { env } from "~/env";
-
-const exerciseSchema = z.object({
-  name: z.string(),
-  how_to_perform: z.string(),
-  equipment: z.array(z.string()),
-  muscles: z.array(z.string()),
-});
 
 const getRowCount = async <
   T extends TableConfig,
@@ -33,6 +24,36 @@ const getRowCount = async <
 };
 
 export const exercisesRouter = createTRPCRouter({
+  getById: publicProcedure
+    .input(z.object({ id: z.number() }))
+    .query(async ({ ctx, input }) => {
+      const exercise = await ctx.db.query.exercises.findFirst({
+        where: (exercises, { eq }) => eq(exercises.id, input.id),
+        columns: {
+          id: true,
+          name: true,
+          how_to_perform: true,
+          createdAt: true,
+          updatedAt: true,
+        },
+        with: {
+          category: true,
+          licence: true,
+          muscles: {
+            with: {
+              muscles: true,
+            },
+          },
+          equipment: {
+            with: {
+              equipment: true,
+            },
+          },
+        },
+      });
+
+      return exercise;
+    }),
   getAll: publicProcedure
     .input(
       z.object({
@@ -99,20 +120,31 @@ export const exercisesRouter = createTRPCRouter({
         })),
       };
     }),
-  addExerciseWithAI: protectedProcedure
+  UpdateExerciseDescriptionWithAI: protectedProcedure
     .input(
       z.object({
-        name: z.string().min(1),
-        categoryId: z.number().optional(),
-        description: z.string().min(1),
+        id: z.number(),
       }),
     )
-    .mutation(async ({}) => {
-      if (!env.OPENAI_API_KEY) throw new Error("OPENAI_API_KEY not set");
-
+    .mutation(async ({ ctx, input }) => {
       // const cat = ctx.db.select().from(category);
+      const exercise = await ctx.db.query.exercises.findFirst({
+        where: (exercises, { eq }) => eq(exercises.id, input.id),
+        columns: {
+          id: true,
+          name: true,
+          how_to_perform: true,
+          createdAt: true,
+          updatedAt: true,
+        },
+      });
+      if (!exercise) throw new Error("Exercise not found");
 
-      const client = new OpenAI({ apiKey: env.OPENAI_API_KEY });
+      const client = new OpenAI({
+        baseURL: "http://localhost:11434/v1/",
+        apiKey: "fake-api-key",
+      });
+      console.log("generating response");
       const chatCompletion = await client.chat.completions.create({
         messages: [
           {
@@ -120,16 +152,22 @@ export const exercisesRouter = createTRPCRouter({
             content:
               "You are a helpful assistant, and you are very good at writing detailed summaries of physical exercises.",
           },
-          { role: "user", content: "Say this is a test" },
+          {
+            role: "user",
+            content: `Write a detailed set of step by step instructions for the exercise ${exercise.name}. Use Markdown. Do not include any other text. Only include the instructions.`,
+          },
         ],
-        model: "gpt-3.5-turbo",
-        response_format: zodResponseFormat(exerciseSchema, "exercise"),
+        model: "llama3.1:latest",
       });
       const response = chatCompletion.choices[0]?.message;
+      console.log(response);
       if (response?.content) {
-        const parsedResponse = exerciseSchema.parse(response.content);
-        console.log(parsedResponse);
-        return parsedResponse;
+        await ctx.db
+          .update(exercisesTable)
+          .set({
+            how_to_perform: response.content,
+          })
+          .where(eq(exercisesTable.id, exercise.id));
       }
     }),
 });

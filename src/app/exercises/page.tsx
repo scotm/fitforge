@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/select";
 import { ExercisePagination } from "@/components/ExercisePage/ExercisePagination";
 import { DropdownMenuCheckboxes } from "@/components/DropdownCheckboxes";
+import Link from "next/link";
 
 type ExerciseData = {
   exercise: RouterOutputs["exercises"]["getAll"]["items"][number];
@@ -23,7 +24,9 @@ type ExerciseData = {
 const Exercise = ({ exercise }: ExerciseData) => {
   return (
     <div>
-      <h2 className="text-2xl font-bold">{exercise.name}</h2>
+      <h2 className="text-2xl font-bold">
+        <Link href={`/exercises/${exercise.id}`}>{exercise.name}</Link>
+      </h2>
       <Markdown>{exercise.how_to_perform}</Markdown>
       <div className="flex flex-col gap-2">
         <p>Category: {exercise.category}</p>
