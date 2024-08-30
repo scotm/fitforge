@@ -4389,44 +4389,6 @@
     }
   },
   {
-    "pk": 1074,
-    "model": "exercises.exercise",
-    "fields": {
-      "description": "Hang for 10 seconds on a fingerboard with a 20 mm edge",
-      "license": 2,
-      "created": "2023-08-06T08:17:17.349Z",
-      "license_title": "",
-      "uuid": "11437c81-ca9e-4670-a9df-2ddf2566f419",
-      "last_update": "2023-12-26T16:33:06.150Z",
-      "language": 2,
-      "exercise_base": 820,
-      "license_author_url": "",
-      "license_derivative_source_url": "",
-      "license_author": "marcelbader",
-      "license_object_url": "",
-      "name": "Fingerboard 20 mm edge"
-    }
-  },
-  {
-    "pk": 1076,
-    "model": "exercises.exercise",
-    "fields": {
-      "description": "Pullup on a choosen edge of a fingerboard / hangboard ",
-      "license": 2,
-      "created": "2023-08-06T08:17:17.349Z",
-      "license_title": "",
-      "uuid": "f7be99bb-9f41-4c7d-8228-f90ec2368007",
-      "last_update": "2023-12-26T16:33:34.445Z",
-      "language": 2,
-      "exercise_base": 821,
-      "license_author_url": "",
-      "license_derivative_source_url": "",
-      "license_author": "marcelbader",
-      "license_object_url": "",
-      "name": "Pullup on fingerboard"
-    }
-  },
-  {
     "pk": 1078,
     "model": "exercises.exercise",
     "fields": {
@@ -4552,44 +4514,6 @@
       "last_update": "2023-12-26T16:38:22.455Z",
       "language": 2,
       "exercise_base": 901,
-      "license_author_url": "",
-      "license_derivative_source_url": "",
-      "license_author": "enros7500",
-      "license_object_url": "",
-      "name": "Barbell Hip Thrust"
-    }
-  },
-  {
-    "pk": 1157,
-    "model": "exercises.exercise",
-    "fields": {
-      "description": "Sit on the ground with a bench behind you, bending your knees so your feet are planted on the ground and holding a barbell resting below your hips. If you have a padded bar, or anything you can slip in between the bar and your body, it will go a long way to making the exercise more comfortable.",
-      "license": 2,
-      "created": "2023-08-06T08:17:17.349Z",
-      "license_title": "",
-      "uuid": "1af6b273-eb97-4712-a0c6-fe9a1dfe97f4",
-      "last_update": "2023-12-26T16:39:09.526Z",
-      "language": 2,
-      "exercise_base": 902,
-      "license_author_url": "",
-      "license_derivative_source_url": "",
-      "license_author": "enros7500",
-      "license_object_url": "",
-      "name": "Barbell Hip Thrust"
-    }
-  },
-  {
-    "pk": 1161,
-    "model": "exercises.exercise",
-    "fields": {
-      "description": "Sit on the ground with a bench behind you, bending your knees so your feet are planted on the ground and holding a barbell resting below your hips. If you have a padded bar, or anything you can slip in between the bar and your body, it will go a long way to making the exercise more comfortable.",
-      "license": 2,
-      "created": "2023-08-06T08:17:17.349Z",
-      "license_title": "",
-      "uuid": "b43149e8-e4fb-4657-893f-2fc0b79baa3d",
-      "last_update": "2023-12-26T16:43:39.812Z",
-      "language": 2,
-      "exercise_base": 906,
       "license_author_url": "",
       "license_derivative_source_url": "",
       "license_author": "enros7500",
@@ -5583,25 +5507,6 @@
       "license_author": null,
       "license_object_url": "",
       "name": "High plank"
-    }
-  },
-  {
-    "pk": 1791,
-    "model": "exercises.exercise",
-    "fields": {
-      "description": "<p>Starting position:</p><p>Start on all fours, knees, toes, and hands touching the ground. Your two big toes should be touching.</p><p>Steps:</p><ol><li>Move your knees so that they're about hip-width apart.</li><li>On an exhale, move your pelvis back to sit on your heels. Your hands should still be touching the ground.</li><li>Relax your upper body, lowering your forehead to the floor and letting your hands move forward naturally.</li><li>Stay in this pose.</li></ol><p>Tips:</p><ul><li>To leave the pose, walk your arms back under your shoulders and move your upper body up into a seated position.</li></ul>",
-      "license": 2,
-      "created": "2023-08-06T08:17:17.349Z",
-      "license_title": "",
-      "uuid": "81e25f25-3007-4798-b6f9-6e1d583eddb2",
-      "last_update": "2023-12-26T16:33:55.133Z",
-      "language": 2,
-      "exercise_base": 1002,
-      "license_author_url": "",
-      "license_derivative_source_url": "",
-      "license_author": null,
-      "license_object_url": "",
-      "name": "Child's pose"
     }
   },
   {
