@@ -44,3 +44,6 @@ yarn-error.log*
 
 # idea files
 .idea
+
+src/server/db/exercises
+db.sqlite.bak
