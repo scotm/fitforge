@@ -75,7 +75,7 @@ export const ExerciseDetail: React.FC<ExerciseDetailProps> = ({ exercise }) => {
                   <Input placeholder="shadcn" {...field} />
                 </FormControl>
                 <FormDescription>
-                  This is your public display name.
+                  This is the name of the exercise.
                 </FormDescription>
                 <FormMessage />
               </FormItem>

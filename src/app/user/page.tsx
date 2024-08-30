@@ -12,7 +12,7 @@ export default async function Page() {
   if (!user) return <div>User not found</div>;
 
   return (
-    <div className="mx-auto min-w-[540px]">
+    <div className="mx-auto min-w-[640px]">
       <h1 className="mb-4 text-3xl font-bold">User Page</h1>
       <UserDetails user={user} />
     </div>

@@ -1,4 +1,4 @@
-export const DEFAULT_PAGE_SIZE = 200;
+export const DEFAULT_PAGE_SIZE = 40;
 
 export const defaultWeightUnit = ["kg", "lbs"] as const;
 export const defaultDistanceUnit = ["km", "miles"] as const;

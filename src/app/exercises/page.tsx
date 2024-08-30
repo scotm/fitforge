@@ -28,19 +28,40 @@ const Exercise = ({ exercise }: ExerciseData) => {
         <Link href={`/exercises/${exercise.id}`}>{exercise.name}</Link>
       </h2>
       <Markdown>{exercise.how_to_perform}</Markdown>
-      <div className="flex flex-col gap-2">
-        <p>Category: {exercise.category}</p>
-        <p>Licence: {exercise.licence}</p>
-        {exercise.equipment.map((equipment) => (
-          <div key={equipment.id} className="flex flex-col gap-2">
-            <p>{equipment.name}</p>
-          </div>
-        ))}
-        {exercise.muscles.map((muscle) => (
-          <div key={muscle.id} className="flex flex-col gap-2">
-            <p>{muscle.name}</p>
-          </div>
-        ))}
+      <div className="grid grid-cols-3 gap-2">
+        <p>
+          <span className="font-bold">Category:</span> {exercise.category}
+        </p>
+        <div>
+          {exercise.equipment.length > 0 ? (
+            <>
+              <p className="font-bold">Equipment</p>
+              {exercise.equipment.map((equipment) => (
+                <ul
+                  key={equipment.id}
+                  className="ml-4 flex list-disc flex-col gap-2"
+                >
+                  <li>{equipment.name}</li>
+                </ul>
+              ))}
+            </>
+          ) : null}
+        </div>
+        <div>
+          {exercise.muscles.length > 0 ? (
+            <>
+              <p className="font-bold">Muscles</p>
+              {exercise.muscles.map((muscle) => (
+                <ul
+                  key={muscle.id}
+                  className="ml-4 flex list-disc flex-col gap-2"
+                >
+                  <li>{muscle.name}</li>
+                </ul>
+              ))}
+            </>
+          ) : null}
+        </div>
       </div>
     </div>
   );
@@ -58,9 +79,7 @@ const ExerciseList: React.FC<ExerciseListProps> = ({ selectedCategory }) => {
       categoryId: selectedCategory,
     },
     {
-      placeholderData: (p) => {
-        return p;
-      },
+      placeholderData: (p) => p,
     },
   );
 
