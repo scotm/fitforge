@@ -1,15 +1,17 @@
 {
   "name": "High Plank",
-  "how_to_perform": "1. Start by kneeling on the floor. Place your hands shoulder-width apart on the floor directly under your shoulders, fingers pointed forward. \\n2. Extend your legs straight behind you, resting on the balls of your feet. Your body should form a straight line from your head to your heels. \\n3. Engage your core by pulling your navel in towards your spine. Make sure your hips are not sagging or lifted too high. \\n4. Keep your neck in a neutral position by looking down at the floor; avoid looking up or letting your head hang down. \\n5. Hold this position for the desired amount of time, ensuring your form remains correct. \\n6. To release, gently lower your knees to the floor and come to a resting position.",
-  "short_summary": "The high plank is a core strengthening exercise that involves holding a push-up position.",
+  "how_to_perform": "1. Start in a kneeling position on the floor. \n2. Place your hands directly under your shoulders, slightly wider than shoulder-width apart.\n3. Step your feet back one at a time to extend your legs fully, keeping your toes and balls of your feet in contact with the floor.\n4. Keep your body in a straight line from head to heels, avoiding sagging your hips or raising them too high.\n5. Engage your core by pulling your belly button in towards your spine.\n6. Hold the position, keeping your gaze slightly ahead of your hands to maintain a neutral neck.\n7. Focus on maintaining a straight line and steady breathing for the duration of the hold.",
+  "short_summary": "The high plank is an isometric exercise that targets the core and upper body muscles by holding a straight body position supported by the arms.",
   "muscles_used": [
-    "rectus abdominis",
-    "transverse abdominis",
-    "obliques",
-    "deltoids",
-    "pectorals",
-    "triceps",
-    "quadriceps"
+    "Core",
+    "Shoulders",
+    "Chest",
+    "Arms",
+    "Back"
   ],
-  "equipment_used": []
+  "equipment_used": [],
+  "alternative_names": [
+    "Front Plank",
+    "Full Plank"
+  ]
 }

@@ -1,19 +1,23 @@
 {
   "name": "Inverted Rows",
-  "how_to_perform": "1. **Set Up:**\n   - Find a Smith machine or a squat rack that has a barbell. Set the barbell to about waist height.\n   - Alternatively, you can use a suspension trainer or rings, adjusting them so your torso is parallel to the ground when you hold the handles.\n\n2. **Position Yourself:**\n   - Lie on your back under the barbell or anchor point.\n   - Reach up and grab the bar with an overhand grip (palms facing away from you), slightly wider than shoulder-width apart. If using rings, grip each handle firmly.\n   - Your feet should be flat on the floor with your legs extended, your body in a straight line from head to heels.\n\n3. **Engage Your Core:**\n   - Tighten your core muscles, keeping your body rigid and in a straight line.\n   - Pull your shoulder blades down and back before you start the movement.\n\n4. **Pull Yourself Up:**\n   - Keeping your body straight, pull your chest up towards the bar by driving your elbows back and squeezing your shoulder blades together.\n   - Your chest should touch or come close to the bar at the top of the movement.\n\n5. **Lower Yourself:**\n   - Slowly lower yourself back to the starting position with controlled motion, fully extending your arms while maintaining a straight body.\n\n6. **Repeat:**\n   - Aim for the desired number of repetitions, maintaining proper form throughout. If using a suspension trainer, ensure your straps remain taut, and your body stays aligned.",
-  "short_summary": "The inverted row is a bodyweight exercise that involves pulling yourself up to a horizontal bar or suspension trainer from a lying position on your back, engaging the back muscles and core.",
+  "how_to_perform": "1. **Set Up the Bar**: Set a barbell in a squat rack or Smith machine at about waist height. Alternatively, use a sturdy, horizontal, waist-high bar.\n   \n2. **Position Yourself**: Lie on your back underneath the bar. Reach up and grab it with an overhand grip, slightly wider than shoulder-width apart.\n   \n3. **Align Your Body**: Your body should form a straight line from head to heels. Keep your feet together and bend your knees so your feet are flat on the floor, or keep your legs straight with your heels resting on the ground.\n   \n4. **Engage Your Core**: Tighten your core and squeeze your glutes; your shoulders should be pulled down and back to avoid rounding them.\n   \n5. **Pull Yourself Up**: Begin the motion by pulling your chest up towards the bar. Focus on squeezing your shoulder blades together at the top of the movement.\n   \n6. **Pause Briefly**: Hold at the top for a moment where your chest is close to the bar.\n   \n7. **Lower Your Body**: Slowly extend your arms to lower yourself back to the starting position. Maintain control throughout and keep your body straight.\n   \n8. **Repeat**: Aim for 8-12 repetitions, maintaining proper form throughout the exercise.",
+  "short_summary": "Inverted Rows are a bodyweight exercise performed by pulling your body up to a horizontal bar while keeping your body straight.",
   "muscles_used": [
     "latissimus dorsi",
     "trapezius",
     "rhomboids",
     "biceps",
     "forearms",
-    "rear deltoids",
     "core"
   ],
   "equipment_used": [
     "barbell",
-    "suspension trainer",
-    "rings"
+    "Smith machine",
+    "pull-up bar"
+  ],
+  "alternative_names": [
+    "Body Rows",
+    "Australian Pull-Ups",
+    "Supine Rows"
   ]
 }

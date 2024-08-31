@@ -1,16 +1,20 @@
 {
   "name": "Incline Dumbbell Row",
-  "how_to_perform": "1. Start by setting an adjustable bench to an incline of about 30 to 45 degrees. Ensure the bench is stable and secure before beginning the exercise.\n\n2. Choose a pair of dumbbells with an appropriate weight for your fitness level and goals. Position the dumbbells on the ground near the head of the bench.\n\n3. Lie face down on the inclined bench, with your chest against the bench padding and your feet planted firmly on the floor. Your head should be slightly above the top edge of the bench, and your neck in a neutral position.\n\n4. Reach down to pick up the dumbbells from the floor, keeping your arms hanging straight down while maintaining a slight bend in the elbows. Your palms should be facing each other in a neutral grip.\n\n5. Brace your core by slightly engaging your abdominal muscles, and ensure your spine remains aligned.\n\n6. Begin the row by pulling the dumbbells upward towards your ribcage, focusing on using your back muscles. Pinch your shoulder blades together as you draw the weights up, keeping your elbows close to the body.\n\n7. Hold at the top of the movement briefly, ensuring you feel the contraction in your back muscles.\n\n8. Lower the dumbbells slowly back to the starting position, fully extending your arms while maintaining control over the weights.\n\n9. Repeat the motion for the desired number of repetitions, maintaining proper form throughout each repetition.\n\n10. Once you have completed the set, carefully return the dumbbells to the ground by reversing the initial pick-up movement.",
-  "short_summary": "The Incline Dumbbell Row involves pulling dumbbells towards your ribcage while lying face down on an incline bench, targeting the upper and middle back muscles.",
+  "how_to_perform": "1. **Set Up the Bench:** Adjust the bench to an incline of about 30-45 degrees.\n\n2. **Select Your Dumbbells:** Choose a pair of dumbbells with a weight that you can lift for the desired number of repetitions, focusing on maintaining good form.\n\n3. **Position Yourself on the Bench:** Lie face down on the bench, ensuring your chest is supported. Let your arms hang straight down towards the floor while holding the dumbbells with your palms facing inwards (neutral grip).\n\n4. **Stabilize Your Body:** Press your feet into the floor or, if not reaching, the floor supports of the bench, keeping your legs straight. Maintain a neutral spine alignment by keeping your head in line with your spine.\n\n5. **Begin the Row Movement:** Engage your core and squeeze your shoulder blades together as you pull the dumbbells up towards your ribcage. Keep your elbows close to your body and focus on pulling with your back muscles rather than your arms.\n\n6. **Pause and Contract:** Once you’ve lifted the dumbbells to your torso, pause briefly while squeezing your shoulder blades together at the top of the movement.\n\n7. **Lower the Dumbbells:** Slowly lower the weights back to the starting position, maintaining control to avoid dropping them.\n\n8. **Repeat:** Perform the desired number of repetitions, ensuring each rep is controlled and maintains good form. Adjust weight if necessary for future sets to maintain proper technique.",
+  "short_summary": "The Incline Dumbbell Row is an upper body exercise primarily targeting the upper and middle back, performed while lying face down on an inclined bench, with a focus on controlled movements for building strength and muscle definition.",
   "muscles_used": [
-    "Latissimus Dorsi",
-    "Trapezius",
+    "Latissimus dorsi",
     "Rhomboids",
-    "Deltoids",
-    "Biceps"
+    "Trapezius",
+    "Biceps",
+    "Deltoids"
   ],
   "equipment_used": [
     "Incline bench",
     "Dumbbells"
+  ],
+  "alternative_names": [
+    "Chest-Supported Dumbbell Row",
+    "Incline Bench Row"
   ]
 }

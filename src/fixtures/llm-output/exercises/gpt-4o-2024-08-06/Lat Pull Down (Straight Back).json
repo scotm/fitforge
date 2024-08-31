@@ -1,14 +1,19 @@
 {
   "name": "Lat Pull Down (Straight Back)",
-  "how_to_perform": "1. **Adjust the Machine**: Start by adjusting the seat and thigh pads of the lat pull-down machine. Sit down and make sure your thighs are secure under the pads, which will help you stay in position during the exercise.\n\n2. **Grip the Bar**: Stand up slightly to grab the bar with a wide grip. Your palms should be facing forward (pronated grip). The width of your grip can vary, but a common width is to have your hands placed wider than shoulder-width apart.\n\n3. **Sit Down and Position Yourself**: Once you have a firm grip on the bar, sit down on the seat and secure your thighs under the pads. Keep your back straight and your core engaged. Lean back slightly but maintain an upright posture throughout the movement.\n\n4. **Start the Pull**: Begin the exercise by pulling the bar down towards your chest. Aim to bring the bar to your upper chest, squeezing your shoulder blades together as you pull. Maintain a controlled and steady motion throughout, avoiding jerky movements.\n\n5. **Keep Your Back Straight**: It is crucial to keep your back straight and your torso still. Do not lean back or swing your body to pull the weight.\n\n6. **Return to Starting Position**: Slowly extend your arms and return the bar to the starting position. Ensure that you maintain control during this part of the movement.\n\n7. **Repeat**: Perform the desired number of repetitions, maintaining good form with each pull. Typically, aim for 8-12 reps for strength training.",
-  "short_summary": "The Lat Pull Down (Straight Back) is an exercise performed on a lat pull-down machine where the user pulls a bar down towards the chest while keeping the back straight. It targets the latissimus dorsi and other upper back muscles.",
+  "how_to_perform": "1. **Adjust the Seat and Weights**: Start by adjusting the knee pad on the lat pulldown machine so that it fits snugly against your thighs. This will keep your body stable as you perform the exercise. Select a weight that is appropriate for your fitness level.\n\n2. **Grip the Bar**: Stand up to reach and grab the bar with an overhand grip (palms facing away from you), slightly wider than shoulder-width apart. Sit back down, making sure your thighs are secured under the knee pads.\n\n3. **Position Your Body**: Sit upright with your back straight and chest up. Your feet should be flat on the floor, and your core should be braced. Lean back slightly only if necessary, but keep your torso as vertical as possible throughout the exercise.\n\n4. **Begin the Pull Down**: Exhale and pull the bar down towards your chest by contracting your lat muscles. Keep your elbows pointed straight down and focus on pulling with your back, not your arms. The bar should come to your upper chest or just below your chin. Avoid using momentum to pull the weight down.\n\n5. **Pause and Squeeze**: At the bottom of the movement, pause briefly and squeeze your shoulder blades together.\n\n6. **Return to Starting Position**: Inhale as you slowly extend your arms and allow the bar to rise back to the starting position, maintaining control and keeping tension in your lats. Keep your core engaged to prevent your torso from moving.\n\n7. **Repeat**: Perform 8-12 repetitions for 2-3 sets, depending on your fitness goals and training level.",
+  "short_summary": "The Lat Pull Down (Straight Back) is an exercise that targets the upper back muscles, primarily the latissimus dorsi, using a cable pulley machine with a wide grip to simulate a pull-up motion.",
   "muscles_used": [
     "Latissimus Dorsi",
-    "Rhomboids",
     "Biceps",
-    "Deltoids"
+    "Rhomboids",
+    "Trapezius",
+    "Rear Deltoids"
   ],
   "equipment_used": [
     "Lat Pulldown Machine"
+  ],
+  "alternative_names": [
+    "Wide-Grip Lat Pulldown",
+    "Pull Down to Chest"
   ]
 }

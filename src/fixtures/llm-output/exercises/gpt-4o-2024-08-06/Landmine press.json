@@ -1,15 +1,20 @@
 {
   "name": "Landmine Press",
-  "how_to_perform": "1. **Setup the Equipment**: Position the landmine in a secure corner or landmine holder to prevent it from moving. Load the desired weight onto the free end of the barbell. Ensure the barbell is anchored firmly to prevent slipping during the exercise.\n2. **Get into Position**: Stand facing the landmine with your feet about shoulder-width apart. Grasp the end of the barbell with one hand, holding it at shoulder height. Your palm should be facing towards you, and the elbow should be close to your body.\n3. **Stance and Grip**: Assume a staggered stance with one foot slightly in front of the other for better balance and core engagement. Use an overhand grip with your thumb wrapped around the barbell.\n4. **Engage Your Core**: Tighten your core muscles to provide stability to your torso. Keep your back straight and your shoulders pulled back and down.\n5. **Press the Barbell**: Push the barbell upward by extending your arm. Press the barbell until your arm is fully extended, keeping a slight bend in the elbow to keep the tension on the muscles.\n6. **Lockout**: At the top of the movement, pause briefly, making sure not to lock out completely at the elbow to maintain muscle tension.\n7. **Controlled Descent**: Slowly lower the barbell back to the starting position at shoulder height in a controlled manner.\n8. **Switch Sides**: After completing the set reps on one side, switch to the other hand and perform the exercise for an equal number of repetitions to maintain balance and symmetry.\n9. **Breathing**: Exhale as you press the barbell up and inhale as you return it to the starting position. Always maintain controlled breathing throughout the movement.",
-  "short_summary": "The Landmine Press is a unilateral pressing exercise targeting the shoulder and chest using a barbell anchored at one end.",
+  "how_to_perform": "1. **Setup the Landmine Unit**: Insert one end of a barbell into the landmine holder or a corner. The other end is free to move. Use weight plates on the free end as needed to adjust difficulty.\n\n2. **Stance and Grip**: Stand with feet shoulder-width apart, facing the free end of the barbell. Hold the barbell with one hand, positioning it at shoulder height. Your palm should face inward to your body.\n\n3. **Engage Your Core**: Tighten your core muscles to stabilize your body. This helps in maintaining balance during the movement.\n\n4. **Press the Barbell**: Extend your elbow to press the barbell up and forward, aiming in a path slightly away from your body. Your arm should almost fully extend without locking the elbow.\n\n5. **Control the Descent**: Slowly bring the barbell back to the starting position, ensuring control and maintaining core stability throughout.\n\n6. **Breathing**: Inhale as you lower the weight, exhale as you press upward.\n\n7. **Repetitions and Switching Arms**: Repeat for the desired number of reps, then switch to the opposite arm. Aim for equal reps on each side to ensure balanced muscle development.",
+  "short_summary": "The Landmine Press is a shoulder and upper chest exercise performed with a barbell pivoted on the ground, engaging core and stability muscles as the bar is pressed forward.",
   "muscles_used": [
-    "deltoids",
-    "pectorals",
-    "triceps",
-    "core"
+    "Shoulders",
+    "Chest",
+    "Triceps",
+    "Core"
   ],
   "equipment_used": [
-    "barbell",
-    "landmine holder"
+    "Barbell",
+    "Landmine holder",
+    "Weight plates"
+  ],
+  "alternative_names": [
+    "Landmine Shoulder Press",
+    "Single-Arm Landmine Press"
   ]
 }

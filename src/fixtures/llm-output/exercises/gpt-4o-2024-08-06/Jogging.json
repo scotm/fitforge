@@ -1,17 +1,19 @@
 {
   "name": "Jogging",
-  "how_to_perform": "1. **Warm-up**: Begin with a 5 to 10-minute warm-up to prepare your body. This can include brisk walking, dynamic stretching, or light aerobic exercises, such as side-to-side leg swings and arm circles, to increase your heart rate gradually.\n\n2. **Get into Position**: Stand upright with your feet hip-width apart. Keep your shoulders relaxed and your head looking forward. Your arms should be bent at about 90 degrees, close to your sides.\n\n3. **Start Jogging**: Begin by lightly jogging at a slow, steady pace. Start by lifting your knees slightly and swinging your arms naturally with each stride. Ensure your feet roll from heel to toe with each step.\n\n4. **Maintain Good Form**: Keep your back straight and avoid leaning too far forward or backward. Maintain a consistent breathing pattern to ensure you have enough oxygen and can maintain your pace comfortably.\n\n5. **Adjust Your Speed**: Depending on your fitness level, you can adjust your pace to suit your endurance. Start slow if you are a beginner and gradually increase the pace. Experienced joggers may incorporate intervals of faster running.\n\n6. **Keep a Consistent Pace**: Aim to maintain a steady pace throughout the jog, focusing on endurance rather than speed. Use a rhythm that allows you to jog without becoming breathless while maintaining a conversation.\n\n7. **Cool Down**: Once you complete your jogging session, cool down by slowing your pace to a walk for the last 5 to 10 minutes. This helps your body transition back to a resting state safely.\n\n8. **Stretch After Jogging**: Following your cool-down, end with a series of stretches to relax and lengthen the muscles worked during jogging. Focus on your calves, quadriceps, hamstrings, and hip flexors to reduce tension and aid recovery.",
-  "short_summary": "Jogging is a cardiovascular exercise where one runs at a steady, gentle pace to build endurance and improve overall fitness.",
+  "how_to_perform": "1. **Choose the right shoes:** Wear comfortable running shoes that fit well and provide adequate support for your feet. This can prevent injuries and make jogging more enjoyable.\n\n2. **Warm up:** Start with a 5-10 minute warm-up walk or dynamic stretching to prepare your muscles and joints.\n\n3. **Find a suitable location:** Look for a safe, even, and flat surface, such as a sidewalk, park trail, or track.\n\n4. **Start slowly:** Begin with a light walk, gradually increasing your pace to a slow jog. Keep your body upright and your head looking forward.\n\n5. **Maintain proper form:** \n   - **Arms:** Keep your elbows bent at a 90-degree angle and swing your arms naturally with each step.\n   - **Legs:** Keep your steps short and light, focusing on landing softly on the midfoot or forefoot.\n   - **Breathing:** Inhale and exhale deeply and rhythmically to maintain a steady breath.\n\n6. **Gradually increase speed and duration:** As you become more comfortable, pick up the pace and jog for longer periods. Start with 10-15 minutes and gradually increase over time.\n\n7. **Cool down:** Finish with a slow walk or gentle stretching to cool down and aid in recovery of your muscles.",
+  "short_summary": "Jogging is a cardiovascular exercise that consists of running at a steady, moderate pace. It's good for improving cardiovascular fitness and endurance.",
   "muscles_used": [
-    "quadriceps",
-    "hamstrings",
-    "calves",
-    "glutes",
-    "hip flexors",
-    "core muscles"
+    "Quadriceps",
+    "Hamstrings",
+    "Gluteal muscles",
+    "Calves",
+    "Core muscles"
   ],
   "equipment_used": [
-    "running shoes",
-    "comfortable clothing"
+    "Running shoes"
+  ],
+  "alternative_names": [
+    "Running",
+    "Light running"
   ]
 }

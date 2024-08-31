@@ -1,14 +1,18 @@
 {
   "name": "Jumping Jacks",
-  "how_to_perform": "1. Stand upright with your legs together and your arms at your sides.\n2. Bend your knees slightly and jump into the air.\n3. As you jump, spread your legs to be about shoulder-width apart. Simultaneously, raise your arms above your head.\n4. Quickly jump back to the starting position by bringing your legs together and lowering your arms to your sides.\n5. Repeat the movement for the desired number of repetitions.",
-  "short_summary": "Jumping Jacks are a full-body exercise that boosts cardiovascular fitness and involves jumping with simultaneous arm and leg movement.",
+  "how_to_perform": "1. **Stand upright with your legs together.** Keep your arms at your sides.\n2. **Bend your knees slightly** and jump into the air.\n3. **As you jump, spread your legs apart** to be about shoulder-width apart and raise your arms above your head in a clapping motion.\n4. **Jump back to the starting position**, bringing your legs together and arms back to your sides.\n5. **Repeat this motion** for the desired amount of time or number of repetitions, maintaining a steady pace.",
+  "short_summary": "A basic full-body exercise that involves jumping to a position with the legs spread wide and the hands touching overhead.",
   "muscles_used": [
-    "quadriceps",
-    "hamstrings",
-    "calves",
-    "glutes",
-    "deltoids",
-    "core"
+    "Calves",
+    "Quadriceps",
+    "Hamstrings",
+    "Glutes",
+    "Hip abductors",
+    "Shoulders",
+    "Core"
   ],
-  "equipment_used": []
+  "equipment_used": [],
+  "alternative_names": [
+    "Star Jumps"
+  ]
 }
