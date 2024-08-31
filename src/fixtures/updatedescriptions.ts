@@ -2,8 +2,8 @@ import { db } from "../server/db";
 import { exercises as exercisesTable } from "../server/db/schema";
 import { eq } from "drizzle-orm";
 import { getExerciseChatCompletion } from "@/lib/llms";
-import { chunkArray } from "@/lib/arrays";
 import { exerciseAlternativeNames } from "~/server/db/tablesSchemas/exercises";
+// import { PromisePool } from "@/lib/promises";
 
 const exercises = await db.query.exercises.findMany({
   columns: {
@@ -13,16 +13,16 @@ const exercises = await db.query.exercises.findMany({
   orderBy: (table, { asc }) => [asc(table.name)],
 });
 
-// split this into chunks
 console.log("Generating descriptions for", exercises.length, "exercises");
 
 const exercisesToGenerate = exercises.filter(
   (exercise) => exercise.name !== null,
 );
 
-const chunked = chunkArray(exercisesToGenerate, 1);
-
-async function generateDescription(exercise: (typeof exercises)[number]) {
+async function generateDescription(exercise: {
+  id: number;
+  name: string | null;
+}) {
   const response = await getExerciseChatCompletion(exercise);
   if (response) {
     console.log("Inserting description for", response.name);
@@ -74,6 +74,8 @@ async function generateDescription(exercise: (typeof exercises)[number]) {
   }
 }
 
-for (const chunk of chunked) {
-  await Promise.all(chunk.map(generateDescription));
+// const pool = new PromisePool({ concurrency: 2 });
+
+for (const exercise of exercisesToGenerate) {
+  await generateDescription(exercise);
 }
