@@ -1,5 +1,5 @@
 import { relations, sql } from "drizzle-orm";
-import { index, int, text } from "drizzle-orm/sqlite-core";
+import { index, int, text, unique } from "drizzle-orm/sqlite-core";
 import { createTable } from "../utils";
 
 export const equipment = createTable(
@@ -25,6 +25,7 @@ export const muscles = createTable(
     id: int("id", { mode: "number" }).primaryKey({ autoIncrement: true }),
     name: text("name", { length: 256 }),
     short_name: text("short_name", { length: 256 }),
+    description: text("description", { length: 5000 }).default("").notNull(),
     is_front: int("is_front", { mode: "boolean" }),
     createdAt: int("created_at", { mode: "timestamp" })
       .default(sql`(unixepoch())`)
@@ -66,6 +67,9 @@ export const exercises = createTable(
       .notNull()
       .references(() => licence.id),
     name: text("name", { length: 256 }),
+    short_summary: text("short_summary", { length: 5000 })
+      .default("")
+      .notNull(),
     how_to_perform: text("how_to_perform", { length: 5000 }),
     createdAt: int("created_at", { mode: "timestamp" })
       .default(sql`(unixepoch())`)
@@ -76,6 +80,35 @@ export const exercises = createTable(
   },
   (example) => ({
     nameIndex: index("exercise_name_idx").on(example.name),
+  }),
+);
+
+export const exerciseAlternativeNames = createTable(
+  "exercise_alternative_names",
+  {
+    exerciseId: int("exercise_id", { mode: "number" })
+      .notNull()
+      .references(() => exercises.id),
+    alternativeName: text("alternative_name", { length: 256 }),
+  },
+  (example) => ({
+    nameIndex: index("exercise_alternative_names_idx").on(
+      example.alternativeName,
+    ),
+    unq: unique("exercise_alternative_names_uniq").on(
+      example.exerciseId,
+      example.alternativeName,
+    ),
+  }),
+);
+
+export const exerciseAlternativeNamesRelations = relations(
+  exerciseAlternativeNames,
+  ({ one }) => ({
+    exercises: one(exercises, {
+      fields: [exerciseAlternativeNames.exerciseId],
+      references: [exercises.id],
+    }),
   }),
 );
 

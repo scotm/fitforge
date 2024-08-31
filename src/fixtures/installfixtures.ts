@@ -1,4 +1,3 @@
-/* eslint-disable drizzle/enforce-delete-with-where */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
@@ -163,6 +162,8 @@ async function eraseOldTables() {
     exercisesTable,
   ];
   for (const table of tables) {
+    // we *want* to delete everything in the table
+    // eslint-disable-next-line drizzle/enforce-delete-with-where
     await db.delete(table);
   }
 }

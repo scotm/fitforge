@@ -8,9 +8,13 @@ import {
   protectedProcedure,
   publicProcedure,
 } from "~/server/api/trpc";
-import { exercises as exercisesTable } from "~/server/db/schema";
+import {
+  exercises as exercisesTable,
+  equipment as equipmentTable,
+  exerciseToEquipment,
+} from "~/server/db/schema";
 
-import OpenAI from "openai";
+import { getExerciseChatCompletion } from "@/lib/llms";
 
 const getRowCount = async <
   T extends TableConfig,
@@ -38,7 +42,6 @@ export const exercisesRouter = createTRPCRouter({
         },
         with: {
           category: true,
-          licence: true,
           muscles: {
             with: {
               muscles: true,
@@ -83,7 +86,6 @@ export const exercisesRouter = createTRPCRouter({
         },
         with: {
           category: true,
-          licence: true,
           muscles: {
             with: {
               muscles: true,
@@ -108,7 +110,6 @@ export const exercisesRouter = createTRPCRouter({
           createdAt: exercise.createdAt,
           updatedAt: exercise.updatedAt,
           category: exercise.category.name,
-          licence: exercise.licence.short_name,
           equipment: exercise.equipment.map((equipment) => ({
             id: equipment.equipment.id,
             name: equipment.equipment.name,
@@ -133,41 +134,46 @@ export const exercisesRouter = createTRPCRouter({
         columns: {
           id: true,
           name: true,
-          how_to_perform: true,
-          createdAt: true,
-          updatedAt: true,
         },
       });
       if (!exercise) throw new Error("Exercise not found");
 
-      const client = new OpenAI({
-        baseURL: "http://localhost:11434/v1/",
-        apiKey: "fake-api-key",
-      });
-      console.log("generating response");
-      const chatCompletion = await client.chat.completions.create({
-        messages: [
-          {
-            role: "system",
-            content:
-              "You are a helpful assistant, and you are very good at writing detailed summaries of physical exercises.",
-          },
-          {
-            role: "user",
-            content: `Write a detailed set of step by step instructions for the exercise ${exercise.name}. Use Markdown. Do not include any other text. Only include the instructions.`,
-          },
-        ],
-        model: "llama3.1:latest",
-      });
-      const response = chatCompletion.choices[0]?.message;
+      const response = await getExerciseChatCompletion(exercise);
       console.log(response);
-      if (response?.content) {
+      if (response) {
         await ctx.db
           .update(exercisesTable)
           .set({
-            how_to_perform: response.content,
+            short_summary: response.short_summary,
+            how_to_perform: response.how_to_perform,
           })
           .where(eq(exercisesTable.id, exercise.id));
+        if (response.equipment_used.length > 0) {
+          const equipment_available = await ctx.db.query.equipment.findMany({
+            columns: {
+              id: true,
+              name: true,
+            },
+          });
+          const equipmentToInsert = response.equipment_used.filter((x) => {
+            return !equipment_available.some(
+              (y) => y.name?.toLocaleLowerCase() === x.toLocaleLowerCase(),
+            );
+          });
+          for (const equipment of equipmentToInsert) {
+            const equipmentId = await ctx.db
+              .insert(equipmentTable)
+              .values({
+                name: equipment,
+              })
+              .returning({ insertedId: equipmentTable.id });
+            if (!equipmentId[0]) continue;
+            await ctx.db.insert(exerciseToEquipment).values({
+              equipmentId: equipmentId[0].insertedId,
+              exerciseId: exercise.id,
+            });
+          }
+        }
       }
     }),
 });

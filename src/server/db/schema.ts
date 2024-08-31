@@ -24,4 +24,16 @@ export {
   musclesRelations,
   category,
   categoriesRelations,
+  exerciseAlternativeNames,
+  exerciseAlternativeNamesRelations,
 } from "./tablesSchemas/exercises";
+
+export {
+  trainingPlan,
+  workoutPieces,
+  cardioWorkoutPiece,
+  resistanceWorkoutPiece,
+  supersetWorkoutComponents,
+  supersetWorkoutPieces,
+  weeklyWorkoutPlan,
+} from "./tablesSchemas/trainingPlan";
