@@ -1,16 +1,15 @@
 {
   "name": "Single-arm Preacher Curl",
-  "how_to_perform": "1. Hold the preacher curl bar with one arm, grip firm and shoulder-width apart.\n2. Sit on the bench with your back against the pad, allowing your arm to rest across the curling surface.\n3. Keep your back straight and core engaged throughout the exercise.\n4. Squeeze your shoulder blades together and pull your arm towards your chest, keeping control over the weight.\n5. Slowly lengthen your arm by lowering it back down to the starting position, maintaining a controlled motion.\n6. Repeat on the opposite arm.",
-  "short_summary": "Single-arm preacher curl targets the biceps in isolation.",
+  "category": "Arms",
+  "how_to_perform": "1. Sit at a preacher curl bench with your back resting against the pad and your arm hanging down, elbow slightly bent.\n Hold dumbbell in your hand, with palm facing in.\n\n2. Slowly extend your arm straight up, keeping your upper arm still, lower back tight and core engaged.\n3. Lower the dumbbell back to the starting position without swinging or jerking, maintaining control throughout the movement.\n4. Repeat for desired number of repetitions.",
+  "short_summary": "Single-arm preacher curls are an isolation exercise that targets one bicep at a time.",
   "muscles_used": [
     "Biceps",
     "Forearms"
   ],
   "equipment_used": [
-    "Preacher curl bar"
+    "Dumbbells",
+    "Preacher curl bench"
   ],
-  "alternative_names": [
-    "Concentration Curl",
-    "One-Arm Preacher Curl"
-  ]
+  "alternative_names": []
 }

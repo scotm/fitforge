@@ -1,17 +1,20 @@
 {
   "name": "Wall Balls",
-  "how_to_perform": "# Perform Wall Ball \n\n1. Stand with your feet shoulder-width apart, about 2-3 inches away from a wall.\n\n2. Hold a medicine ball or weight in both hands at chest level, with your elbows slightly bent.\n\n3. Twist your torso to the right and then immediately to the left while keeping your upper body stable.\n\n4. As you twist, bring the med ball around in an arc shape, as if tossing it back and forth, always keeping your arms straight.\n\n5. Repeat for 10-20 repetitions.",
-  "short_summary": "Wall Balls are a movement exercise that engages the core muscles to move a weight or medicine ball around the body at chest level.",
+  "category": "Cardio",
+  "how_to_perform": "1. Stand with your feet shoulder-width apart and hold a ball against the wall at chest height.\n2. Explosively throw the ball up towards the ceiling while engaging your core and keeping your movements controlled.\n3. Catch the ball as it comes back down, absorbing the impact with slightly bent knees and softly bent arms to minimize any unnecessary strain on the joints.\n4. Quickly repeat the motion without pauses in between throws for the desired number of repetitions.",
+  "short_summary": "Wall Balls are a plyometric exercise that emphasizes explosive throws and catches while engaging core muscles and improving cardiovascular endurance",
   "muscles_used": [
-    "Core",
-    "Obliques",
-    "Shoulders"
+    "Abs",
+    "Shoulders",
+    "Forearms",
+    "Glutes"
   ],
   "equipment_used": [
-    "Medicine ball"
+    "Medicine Ball",
+    "Wall"
   ],
   "alternative_names": [
-    "Weighted Torso Twist",
-    "Wall Ball Swing"
+    "Plyometric Push-Ups with Medicine Ball",
+    "Medicine Ball Throws Against the Wall"
   ]
 }

@@ -1,16 +1,20 @@
 {
   "name": "Stationary Bike",
-  "how_to_perform": "1. Start by sitting on the stationary bike with your back straight and your hands gripped lightly on to the handlebars.\n2. Get comfortable and familiarize yourself with the bike's controls, focusing particularly on how to use the pedals, gear adjustments, and the seat height adjustment.\n3. Adjust the bike seat height to a position where your leg can reach the pedal when your knee is straight.\n\n4. Ensure that the saddle height is at least 0-5mm above the horizontal line drawn from the crotch when seated on the bike with shoes off.\n\n5. Familiarize yourself with different resistance settings, taking note of how they feel and which ones you may enjoy most.\n6. Begin pedaling using your legs, feeling for a rhythm or pace that you find comfortable.\n\n7. Keep the back straight throughout the exercise to prevent strain in the lower back.\n8. As needed, use proper hand positioning on the handlebars while maintaining control over the bike's movement by gripping tightly without excessive force.\n9. Practice regular gear shifts as desired to simulate outdoor cycling.\n10. Continue riding for the duration indicated per workout as prescribed,\n   \n11. Upon completion of the desired exercise time, turn off the machine and come to a gentle stop.",
-  "short_summary": "Stationary bike is an ideal cardio workout that uses low-impact movements with variable resistance settings to promote cardiovascular endurance, leg strength, and improved metabolism.",
+  "category": "Cardio",
+  "how_to_perform": "1. Sit on the stationary bike with your back straight, feet flat on the pedals and hands holding onto the handlebars for support.\n2. Start pedaling at a comfortable pace to begin warming up. Gradually increase the intensity of your cycling by adjusting the resistance level as needed.\n3. Engage your core and maintain good posture throughout the exercise. Keep your weight evenly distributed in the seat, avoiding leaning forward or backward.\n4. Pedal swiftly and efficiently, focusing on utilizing your legs and cardiovascular system to generate power.\n5. Monitor your progress and adjust the intensity level as required to challenge yourself and optimize results.",
+  "short_summary": "The stationary bike is a low-impact cardio machine that can be used for exercise in various settings, offering an engaging way to improve overall fitness by working the lower body and cardiovascular system.",
   "muscles_used": [
-    "Legs",
+    "Quads",
+    "Hamstrings",
     "Glutes",
     "Calves"
   ],
   "equipment_used": [
-    "Stationary Bike Machine"
+    "Stationary Bike"
   ],
   "alternative_names": [
-    "Exercise bike"
+    "Exercise Bike",
+    "Cycle Trainer",
+    "Spin Bike"
   ]
 }

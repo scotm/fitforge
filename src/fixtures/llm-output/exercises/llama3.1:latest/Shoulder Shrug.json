@@ -1,14 +1,16 @@
 {
   "name": "Shoulder Shrug",
-  "how_to_perform": "1. Start by standing with your feet shoulder-width apart, facing forward.\n2. Slowly raise your shoulders upward toward your ears, squeezing the muscles at the top of your shoulders.\n3. Hold this position for a brief moment.\n4. Slowly lower your shoulders back down to their starting position.\n5. Repeat the movement for the desired number of repetitions, maintaining control and focus throughout.",
-  "short_summary": "The shoulder shrug is an isolation exercise that targets the trapezius muscle and other shoulder muscles.",
+  "category": "Shoulders",
+  "how_to_perform": "1. Hold your arms by your sides with your palms facing the ground.\n2. Without moving your upper arms, lift your shoulders forward and up towards your ears.\n3. Pause briefly at the top of the movement, squeezing your shoulder muscles.\n4. Slowly return to the starting position without moving your upper arms.",
+  "short_summary": "A simple exercise where you shrug your shoulders up and down to work multiple muscle groups.",
   "muscles_used": [
-    "Trapezius",
-    "Rhomboids",
-    "Subclavius"
+    "Shoulders",
+    "Neck",
+    "Traps"
   ],
   "equipment_used": [],
   "alternative_names": [
-    "Neck Shrug"
+    "Shrug Exercise",
+    "Lateral Raises"
   ]
 }

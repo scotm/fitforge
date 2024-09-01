@@ -1,18 +1,15 @@
 {
   "name": "Shotgun Row",
-  "how_to_perform": "1. **Start by grasping a dumbbell with one hand, holding it at your side with your palm facing towards your body.**\n\n2. Keep your core engaged and your back straight as you take a small step forward with the opposite foot, keeping your weight evenly distributed between both feet.\n\n3. Keeping your upper arm still and your elbow close to your body, slowly begin to lift the dumbbell outwards, keeping it at or below shoulder height.\n\n4. **Pulse or hold** for a brief moment in this position to target your back muscles.\n\n5. Slowly return the dumbbell to the starting position beside your opposite leg and repeat with the same side.\n\n6. Continue alternating sides for the desired number of repetitions, keeping control and focus on the back muscles throughout.",
-  "short_summary": "Shotgun rows are a unilateral exercise targeting the latissimus dorsi, trapezius, rhomboids, and other posterior shoulder muscles.",
+  "category": "Chest",
+  "how_to_perform": "1. Hold a dumbbell or resistance band in each hand, with your palms facing backward and your arms extended in front of you.\n2. Keep your back straight and engage your core, imagining that you are pulling your sternum towards your spine.\n3. Lean forward slightly, keeping your chest still, and allow the weight to stay level with your shoulders.\n4. Pull one dumbbell (or tension band) across your chest, targeting the muscles on the opposite side of your body. Hold for a brief moment.\n5. Slowly return the weight to its starting position in front of you.\n6. Switch sides and repeat this sequence.",
+  "short_summary": "Shotgun Rows are an upper body exercise that targets multiple muscle groups, with an emphasis on the chest, shoulders, and back muscles.",
   "muscles_used": [
-    "Latissimus Dorsi",
-    "Trapezius",
-    "Rhomboids",
-    "Shoulders"
+    "Chest",
+    "Shoulders",
+    "Brachialis"
   ],
   "equipment_used": [
-    "Dumbbell"
+    "Dumbbells"
   ],
-  "alternative_names": [
-    "Unilateral Rows",
-    "Side-Step Row"
-  ]
+  "alternative_names": []
 }

@@ -1,16 +1,17 @@
 {
   "name": "Shrugs with Barbells",
-  "how_to_perform": "1. Stand or sit with your back straight, holding a pair of dumbbells at shoulder height with an overhand grip (palms facing away from you).\n\n2. Keeping your upper arms still, engage your core and lift the dumbbells straight up so that they are just below your clavicles.\n\n3. Pause briefly for a split second to squeeze your scapulae (shoulder blades) together.\n\n4. Slowly lower the dumbbells back to their starting position at shoulder height, keeping control throughout the movement.\n\n5. Repeat this process for the desired number of repetitions, maintaining proper form and avoiding any unnecessary strain on your joints.\n",
-  "short_summary": "Shrugs with barbells are an upper body exercise that targets the scapular muscles, performed by lifting weight off the shoulders.",
+  "category": "Shoulders",
+  "how_to_perform": "1. Stand with your feet shoulder-width apart, holding a barbell with your hands shoulder-width apart.\n2. Keep your core engaged and hold the barbell with a neutral grip, avoiding any twisting in your wrists.\n3. Shrug your shoulders up towards your ears by keeping your elbows straight and squeezing your upper traps to lift the weight off the ground.\n4. Push your shoulders up as far as possible without leaning forward or rounding your back.\n5. Hold the contraction for 1-2 seconds, then slowly lower the barbell back down to the starting position.\n6. Repeat the movement for the desired number of repetitions.",
+  "short_summary": "Shrugs with barbells target the muscles in your upper back and shoulders.",
   "muscles_used": [
-    "Scapular muscles (Trapezius)",
-    "Rhomboids"
+    "Shoulders",
+    "Traps"
   ],
   "equipment_used": [
-    "Barbell weights"
+    "Barbell"
   ],
   "alternative_names": [
-    "Dumbbell shrugs",
-    "Weighted shrugs"
+    "Dumbbell Shrugs",
+    "Overhead Barbell Shrugs"
   ]
 }

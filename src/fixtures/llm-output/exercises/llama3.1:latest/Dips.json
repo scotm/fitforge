@@ -1,20 +1,18 @@
 {
   "name": "Dips",
   "category": "Arms",
-  "how_to_perform": "1. Start by standing in between a set of parallel bars, with one bar on either side of you. Grip each bar firmly with your palms facing inward (towards your body).\n\n2. Lift yourself up off the ground by pressing down on the bars and extend your arms fully. Your legs should be hanging straight down and your body shouldn't be touching the bars.\n\n3. Keep your core engaged and your body upright. Lean slightly forward to emphasize activation in the chest muscles. Keep your elbows close to your body.\n\n4. Slowly lower your body by bending your elbows. Keep your elbows tucked in close to your sides as you lower yourself. Lower until your elbows are at about a 90-degree angle or slightly below. Feel the stretch in your chest and triceps.\n\n5. Pause briefly at the bottom of the movement.\n\n6. Push yourself back up to the starting position by straightening your arms. Ensure your movements are controlled, focusing on using your chest and triceps to lift.\n\n7. Repeat for the desired number of repetitions, keeping your core tight and your movements controlled throughout the exercise.",
-  "short_summary": "Dips work the muscles in your upper body.",
+  "how_to_perform": "1. Start by standing under a set of parallel bars, with your hands gripping the bars and your body forming an L-shape.\n\n2. Lower yourself down until your arms are bent at about a 90-degree angle, then straighten them to return to the starting position.\n\n3. As you lower, keep your elbows close to your sides and engage your core muscles throughout the movement.\n\n4. Use your chest, shoulders, and triceps to lift your body back up to the top of the movement.\n\n5. Repeat for the desired number of repetitions.",
+  "short_summary": "Dips are an upper body exercise that works the triceps, chest, and shoulders, often performed using parallel bars or a set of rings.",
   "muscles_used": [
     "Triceps",
     "Chest",
-    "Shoulders",
-    "Abs"
+    "Shoulders"
   ],
   "equipment_used": [
-    "Parallel bars"
+    "Parallel bars",
+    "Rings"
   ],
   "alternative_names": [
-    "Parallel Bar Dips",
-    "Dips exercise",
-    "Chest dips"
+    "Parallel Bar Dips"
   ]
 }

@@ -1,17 +1,15 @@
 {
   "name": "Reverse Nordic Curl",
   "category": "Arms",
-  "how_to_perform": "1. Hold a dumbbell in each hand with your palms facing forward and your arms extended.\n2. Bend your knees slightly and lean forward at the hips, keeping your back straight.\n3. Engage your core by pulling your belly button towards your spine.\n4. From this position, flex your elbow to curl the dumbbells up towards your shoulders, keeping your upper arms still.\n5. Lower the dumbbells back down to the starting position, but do not return directly under control - pause for a moment before lower.\n6. Repeat on the other side.",
-  "short_summary": "Reverse Nordic Curl is an isolation exercise that targets the brachialis muscle and surrounding areas with varying degrees of involvement from adjacent muscles like the biceps brachii and pectoralis major.",
+  "how_to_perform": "1. Hold a barbell or dumbbells with your palms facing your body and sit on a bench, leaning back slightly.\n2. Keeping your upper arm still, lift the weight up by bending your elbow until it reaches your shoulder blade, drawing your shoulder blades together as you go.\n3. Lower the weight back to the starting position without releasing your grip or letting the weight swing behind you.\n4. Repeat for the desired number of repetitions",
+  "short_summary": "Reverse Nordic curls are an exercise that targets the brachialis muscle.",
   "muscles_used": [
-    "Biceps",
-    "Serratus anterior",
-    "Lower back"
+    "Brachialis"
   ],
   "equipment_used": [
-    "Dumbbells"
+    "Barbell"
   ],
   "alternative_names": [
-    ""
+    "Close-Grip Concentration Curl"
   ]
 }

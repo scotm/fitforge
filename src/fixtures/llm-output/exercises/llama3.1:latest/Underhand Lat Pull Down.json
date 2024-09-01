@@ -1,18 +1,14 @@
 {
   "name": "Underhand Lat Pull Down",
-  "how_to_perform": "1. **Start by sitting at a lat pull-down machine** with your knees securely anchored under the knee pad and your feet flat on the floor.\n2. Grasp the bar with an **underhand grip**, meaning your palms should face towards your body.\n3. With your arms extended, pull the bar down towards your chest by contracting your lats (latissimus dorsi) muscles. Avoid swinging or jerking movements.\n4. Focus on using your back muscles to pull the weight down, keeping your elbows close to your body throughout the movement.\n5. Once you reach the height of your desired range, pause briefly and then slowly return the bar to its starting position by extending your arms fully.\n6. Repeat for the desired number of repetitions, maintaining control over the weight and engaging your lats muscles during each rep.",
-  "short_summary": "Underhand lat pull down is a back exercise that targets the latissimus dorsi muscles using a lat pull-down machine.",
+  "category": "Back",
+  "how_to_perform": "1. Sit at a lat pull down machine with your knees securely under the knee pad and your back flat against the backrest.\n\n2. Grasp the bar with both hands using an underhand grip, which means your palms will be facing towards you.\n\n3. Engage your core by pulling your belly button towards your spine to maintain good posture and stability throughout the exercise.\n\n4. Pull the bar down toward your chest, keeping your elbows close to your body as you do so. Focus on squeezing your lats at the top of the movement.\n\n5. Slowly return the bar to its starting position, maintaining control throughout the entire range of motion.\n\n6. Repeat for the desired number of repetitions.",
+  "short_summary": "The underhand lat pull down is an exercise that targets the latissimus dorsi muscles in your back, working them from a seated position using a lat pull down machine.",
   "muscles_used": [
     "Lats",
-    "Trapezius",
-    "Rhomboids",
-    "Middle and Lower Back"
+    "Rhomboids"
   ],
   "equipment_used": [
-    "Lat Pull-Down Machine"
+    "Lat Pull Down Machine"
   ],
-  "alternative_names": [
-    "Pull Down",
-    "Underhand Lat Pulldown"
-  ]
+  "alternative_names": []
 }

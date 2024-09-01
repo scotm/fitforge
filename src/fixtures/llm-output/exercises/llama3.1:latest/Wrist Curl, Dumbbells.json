@@ -1,15 +1,17 @@
 {
   "name": "Wrist Curl, Dumbbells",
-  "how_to_perform": "1. Start by sitting on the edge of a bench or chair with your hands hanging straight down from your sides, holding a dumbbell in each hand with your palms facing forward (towards you).\n\n2. Keeping your upper arms still and only bending at the wrists, slowly curl your hands up towards your shoulders.\n\n3. Focus on squeezing your biceps muscles as you curl your hands upwards.\n\n4. Lower your hands back down to the starting position, keeping control throughout the movement.\n\n5. Repeat for the desired number of repetitions.\n",
-  "short_summary": "Wrist Curls with dumbbells are an isolation exercise that targets the flexor muscles of the forearm.",
+  "category": "Arms",
+  "how_to_perform": "1. Sit on the edge of a bench or chair with your back straight, holding a dumbbell in each hand.\n2. Place your hands palm down on the edge and lift your arms up so that your elbows are bent at a 90-degree angle.\n3. With your palms facing downwards, lift your wrists upwards, curling your forearms towards your shoulder blades.\n4. Slowly lower your wrists back down to the starting position without touching your palms to the surface.\n5. Repeat for the desired number of repetitions.",
+  "short_summary": "The wrist curl exercise targets the forearm muscles responsible for hand movement and grip strength.",
   "muscles_used": [
-    "Biceps Brachii"
+    "Forearms"
   ],
   "equipment_used": [
-    "Dumbbells"
+    "Dumbbells",
+    "Bench or chair"
   ],
   "alternative_names": [
-    "Single-Arm Dumbbell Wrist Curl",
-    "Forearm Curl with dumbbells"
+    "Wrist curls with dumbbells",
+    "Finger curls"
   ]
 }

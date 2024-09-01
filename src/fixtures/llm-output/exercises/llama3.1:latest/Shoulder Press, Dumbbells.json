@@ -1,18 +1,21 @@
 {
   "name": "Shoulder Press, Dumbbells",
-  "how_to_perform": "1. **Stand with your back straight, feet shoulder-width apart, and a dumbbell in each hand**.\n\n2. Hold the dumbbells at ear height with your palms facing forward.\n\n3. Engage your core by drawing your belly button towards your spine.\n\n4. Press the dumbbells straight up over your head, extending your arms fully.\n\n5. Pause briefly at the top of the movement.\n\n6. Slowly lower the dumbbells back down to their original position, keeping control throughout the entire range of motion.\n\n7. Repeat for the desired number of repetitions, ensuring proper form and controlled movements.\n  ",
-  "short_summary": "The shoulder press with dumbbells is an upper body exercise that primarily targets the deltoids and other shoulder muscles.",
+  "category": "Shoulders",
+  "how_to_perform": "1. Stand or sit with your feet shoulder-width apart and hold a dumbbell in each hand at shoulder height, with your palms facing forward.\n2. Engage your core by pulling your belly button towards your spine, ensuring that your hips do not sag or pike upwards throughout the movement.\n3. Press one dumbbell straight up over your head, keeping your elbow close to your ear and avoiding arching in your lower back.\n4. Lower the dumbbell back down to the starting position.\n5. Alternate with the other dumbbell, mimicking a see-saw motion by pressing one dumbbell up while lowering the other one back down.\n6. Ensure that your movements are controlled throughout each repetition.",
+  "short_summary": "Shoulder press with dumbbells works multiple muscle groups in the upper body including shoulders and triceps, performed using handheld weights.",
   "muscles_used": [
-    "Deltoids",
-    "Trapezius",
+    "Biceps",
+    "Triceps",
     "Shoulders",
-    "Core"
+    "Neck"
   ],
   "equipment_used": [
     "Dumbbells"
   ],
   "alternative_names": [
     "Dumbbell Shoulder Press",
-    "Standing Dumbbell Shoulder Raise"
+    "Olympic Club Press",
+    "Seated Dumbbell Shoulder Press",
+    "Standing Dumbbell Shoulder Press"
   ]
 }

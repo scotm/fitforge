@@ -1,18 +1,17 @@
 {
   "name": "Seated Cable Rows",
-  "how_to_perform": "# Seated Cable Rows\n1. Sit on a seated cable row machine with your feet flat on the floor, hip-width apart.\n2. Bend over and take each handle in an underhand grip, so that your hands are shoulder-width apart and your arms are straight.\n\n3. Keep your back straight, core engaged, and shoulders relaxed throughout the exercise.\n4. Pull one handle towards you until your elbows are at a 90-degree angle or slightly higher.\n5. Focus on squeezing your lats and pulling your shoulder blades together as you pull the handle.\n6. Slowly return the handle to its original position without letting it swing back sharply. Avoid arching your lower back.\n\n7. Repeat with alternating arms for one set, then switch arms in subsequent sets. Adjust the seat height if necessary to accommodate a range of motion that doesn't require leaning forward.\n\n8. Perform three to four sets of the desired number of repetitions for optimal results and progression.",
-  "short_summary": "Seated cable rows is an upper body exercise targeting latissimus dorsi, rhomboids, and middle back muscles using a seated row machine with handles at shoulder height.",
+  "category": "Back",
+  "how_to_perform": "**1. Adjust the seated row machine so that a cable is hanging down at an angle, with one end attached to each side of a seat or bench.**\n\n\n**2. Sit at the machine with your feet flat on the floor and your back straight. Your knees should be at 90-degree angles if possible.**\n\n\n**3. Grasp the bar attached to the cable with both hands, shoulder-width apart and palms facing toward each other.**\n\n\n**4. Squeeze your shoulders down and back as you prepare for the exercise, keeping your core muscles engaged.**\n\n\n**5. Draw the bar towards your chest by pulling the cable handle toward you, rather than lifting with your arms. Keep your elbows slightly bent throughout the movement.**\n\n\n**6. Pause briefly at the end of the row motion to maintain good form and ensure proper muscle activation.**\n\n\n**7. Return the bar to its starting position, avoiding swinging or jerking movements that could destabilize the machine. Repeat for desired number of repetitions.",
+  "short_summary": "Seated cable rows are a back exercise targeting multiple muscles with minimal involvement from other body parts",
   "muscles_used": [
-    "Latissimus Dorsi",
+    "Lats",
     "Rhomboids",
-    "Middle Back",
-    "Core"
+    "Lower back"
   ],
   "equipment_used": [
-    "Seated Cable Row Machine"
+    "Cable row machine"
   ],
   "alternative_names": [
-    "Cable Pulldown Rows",
-    "Row Seated Machine Rows"
+    "Seated Row Exercise"
   ]
 }

@@ -1,15 +1,16 @@
 {
   "name": "Smith Machine Close-grip Bench Press",
-  "how_to_perform": "# Smith Machine Close-grip Bench Press Instructions\n\n1. Sit at the smith machine with your body positioned under the bar and your feet flat on the ground.\n2. Grip the bar tightly with a close grip (approximately shoulder-width apart).\n3. Place your hands slightly wider than shoulder-width, but not too far apart since you're performing a close-grip variation.\n4. Ensure that your core is engaged to maintain proper posture throughout the exercise.\n5. Slowly lift the weight off the rack and press it up over you by extending your elbows fully, keeping your upper arms stationary.\n6. Squeeze your chest muscles as you reach the top of the movement.\n7. Control the weight as you lower it back down to the starting position until your arms are bent at about a 90-degree angle or slightly below.\n\n8. Press the weight upwards again but stop when your elbows are extended fully and do another repetition.\n\nRepeat for the desired number of repetitions,\nkeep your core tight, focus on squeezing your chest muscles during the contraction, and avoid swinging the bar with momentum.\n\n9. Finish by lowering the weight to the rack and standing up.\n\n",
-  "short_summary": "Close-grip smith machine bench press is a variation of traditional bench presses using a shorter grip interval.",
+  "category": "Chest",
+  "how_to_perform": "1. Adjust the Smith machine to allow you to position your hands closer together than shoulder-width apart.\n2. Lie on a flat bench and grasp the bar with hands positioned close together but not touching.\n3. Lower the bar down towards your chest, keeping your back pressed into the pad as you move through the range of motion.\n4. Focus on using your arms primarily for this movement, trying to reduce reliance on any additional help from the Smith machine.\n5. Once the bar reaches just short of touching your chest, pause briefly then begin pushing the bar up towards the ceiling.\n6. Continue performing controlled repetitions, taking note of proper form and technique throughout.",
+  "short_summary": "The Smith Machine Close-grip Bench Press is a variation of the traditional bench press, targeting the upper body by requiring closer hand positioning while using a machine for support.",
   "muscles_used": [
     "Chest",
-    "Anterior Deltoids"
+    "Triceps",
+    "Shoulders"
   ],
   "equipment_used": [
-    "Smith Machine Bench Press"
+    "Smith machine",
+    "Bench"
   ],
-  "alternative_names": [
-    ""
-  ]
+  "alternative_names": []
 }

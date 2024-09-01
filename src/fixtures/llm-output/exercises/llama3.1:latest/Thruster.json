@@ -1,19 +1,17 @@
 {
   "name": "Thruster",
-  "how_to_perform": "1. Start standing with your feet shoulder-width apart, holding a barbell with the weight in front of your shoulders and your hands gripping the bar with an overhand grip.\n\n2. Hinge at your hips and knees to lower your body until your back is almost parallel to the ground, keeping the barbell close to your shins.\n\n3. Next, push through your heels and extend your legs to return to standing in a squat position, keeping the barbell close to your shoulders throughout the movement.\n\n4. From this bottomed out position, immediately drive upwards and thrust the weight overhead by extending your arms fully, squeezing at the top of the movement.\n\n5. Pause briefly in this raised position before rapidly lowering yourself back down into the starting squat position.\n\n6. Repeat the rapid thruster movements for the desired number of repetitions, focusing on controlled breathing throughout the exercise.",
-  "short_summary": "Thrusters are a compound exercise that engages multiple muscle groups, requiring rapid transitions between a squat and overhead press position with a barbell",
+  "category": "Legs",
+  "how_to_perform": "1. Start with your feet shoulder-width apart and hands on the floor or a platform, with your arms directly under your shoulders.\n2. Kick back into a plank position, while keeping your legs straight.\n3. Quickly lower your body by bending at the elbows until you place both palms on the ground or platform.\n4. Do not touch your knees to the chest, if doing the thruster with no platform.\n5. From this bottomed-out position, jump your entire body forward - propelling yourself with both arms and legs.\n6. Land softly in a squat position, with your hands still on the ground or platform.\n7. Then, stand up from the squat by driving through both heels.\n8. Immediately return to the starting position, where you kicked back into a plank.",
+  "short_summary": "Thrusters are dynamic movements that strengthen multiple leg muscles while engaging smaller stabilizer muscles and is similar to a combination of Squat-Thrusters and Burpees with an emphasis on propulsion forward using both arms and legs.",
   "muscles_used": [
-    "Quadriceps",
-    "Hamstrings",
     "Glutes",
-    "Shoulders",
-    "Traps"
+    "Quads",
+    "Hamstrings",
+    "Lats"
   ],
-  "equipment_used": [
-    "Barbell"
-  ],
+  "equipment_used": [],
   "alternative_names": [
-    "Low Box Squat and Press",
-    "Squat Thrust"
+    "Thruster Squat Jump",
+    "Squat Thrusters"
   ]
 }

@@ -1,17 +1,17 @@
 {
   "name": "Muscle Up",
-  "how_to_perform": "1. Find a bar or rig that has two handles, one higher than the other. It should be at least 10 feet off the ground.\n\n2. Start by hanging from the lower handle with your hands shoulder-width apart and your body straight, with no tension in your shoulders.\n\n3. Keeping your shoulders relaxed, slowly lift yourself up towards the upper handle. Keep your elbows close to your body and engage your core muscles.\n\n4. Press down on the bar and extend your arms fully, lifting your entire body off the ground. Your body should be mostly vertical at this point.\n\n5. Hold the upper position of the muscle-up for a brief moment, feeling the contraction in your chest, shoulders, and core muscles.\n\n6. Slowly lower yourself back down to the starting position, keeping control throughout the movement.\n\n7. Repeat for the desired number of repetitions.",
-  "short_summary": "Muscle-ups are an upper body exercise that involves lifting one's entire body from a hanging position to a handstand on a bar without using the legs.",
+  "category": "Arms",
+  "how_to_perform": "1. Start in a hanging position with your hands gripping an edge or bar for support.\n\n2. Engage your core by pulling your belly button towards your spine, ensuring that your body stays tight and stable throughout the movement.\n\n3. Kick your legs up behind you and lift your body off the ground until you are almost perpendicular to the floor.\n\n4. From this hanging leg raise position, slowly pull your body up, keeping it straight from head to heels.\n\n5. As you ascend, focus on engaging your arms, shoulders, and core muscles to help you up. \n\n6. Pause briefly once you reach the top of the movement.\n\n7. Slowly lower yourself back down using only your arm strength.",
+  "short_summary": "The muscle-up is a pull-up variation that works multiple upper-body muscles in a single motion.",
   "muscles_used": [
-    "Chest",
     "Shoulders",
-    "Core",
-    "Triceps"
+    "Chest",
+    "Biceps",
+    "Triceps",
+    "Calves"
   ],
   "equipment_used": [
-    "Pull-up bar"
+    "Bar for support"
   ],
-  "alternative_names": [
-    "Ring Muscle Ups"
-  ]
+  "alternative_names": []
 }

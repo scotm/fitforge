@@ -1,15 +1,12 @@
 {
   "name": "Sit-ups",
-  "how_to_perform": "1. Lie on your back with your knees bent and feet flat on the ground, keeping them hip-width apart. Place your hands behind you for support.\n\n2. Engage your core by pulling your belly button towards your spine and maintaining a neutral position of your pelvis and lower back.\n\n3. Slowly lift your torso up, curling upward while keeping your shoulders down. Focus on using the muscles in your abs, avoiding relying on momentum or bending at the waist instead.\n\n4. Only lift as high as you can maintain with control. You should be able to see your belly button and feel engagement in the abdominal muscles.\n\n5. Hold for a brief moment at the top of the movement.\n\n6. Slowly lower yourself back down to the starting position, maintaining control throughout the descent.\n\n7. Repeat for the desired number repetitions, keeping proper form and engaging core muscles throughout the exercise.",
-  "short_summary": "Sit-ups are a classic upper body exercise that targets primarily the rectus abdominis, along with secondary muscles like hip flexors, lower back, and to some extent shoulders.",
+  "category": "Abs",
+  "how_to_perform": "1. Lie on your back with your knees bent and feet flat on the ground, hip-width apart.\n2. Engage your core by drawing your belly button towards your spine.\n3. Place your hands behind your head for support, but avoid interlacing your fingers or using them to lift your chest off the ground.\n4. Slowly lift your torso upwards towards your knees, curled up and targeting the abdominal muscles.\n5. Keep your pelvis down towards the ground to maintain a consistent angle of elevation for your torso (avoid tucking one side more than the other to ensure balanced engagement across all ab muscles).\n6. Lower back down without touching your upper body part with the ground; instead focus on reaching the bottom position gently by straightening out your torso without breaking form, letting it rest against gravity before attempting another rep from this state.\n7. As you rise up during each successive sit-up attempt feel strong pressure around middle core and deeper into ab area.",
+  "short_summary": "Sit-ups target primarily the abdominal muscles in conjunction with some assistance to engage your lower back.",
   "muscles_used": [
-    "Rectus Abdominis",
-    "Obliques",
-    "Hip Flexors",
-    "Lower Back"
+    "Abs",
+    "Lower back"
   ],
   "equipment_used": [],
-  "alternative_names": [
-    "Traditional Crunches"
-  ]
+  "alternative_names": []
 }

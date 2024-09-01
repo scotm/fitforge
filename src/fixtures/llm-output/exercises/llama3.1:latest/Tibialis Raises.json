@@ -1,18 +1,12 @@
 {
   "name": "Tibialis Raises",
-  "how_to_perform": "1. Start by sitting on the edge of a chair, bench, or step with your feet flat on the floor in front of you.\n\n2. Slowly lift one foot up until it is a few inches off the ground and raise onto your toes, keeping your heel away from your body. This should be done using the muscles in your lower leg.\n\n3. Hold this position for a brief moment to contract your tibialis anterior muscle.\n\n4. Lower your raised foot back down to the starting position without touching your heel to the floor.\n\n5. Repeat with the opposite foot, alternating legs throughout the exercise.\n\n6. Continue alternating legs for the desired number of repetitions, keeping control and focus on contracting the muscles in your lower leg.\n7. Finish when you have completed the required number of repetitions.",
-  "short_summary": "Tibialis raises are an exercise that targets one's tibialis anterior muscles, located along the front lower portion of the shin area.",
+  "category": "Legs",
+  "how_to_perform": "1. Start by standing with your back straight and feet shoulder-width apart.\n2. Engage your core muscles to maintain a stable position.\n3. Slowly lift one food off the ground, keeping it in line with your ankle, and raise your heel without bending your knee.\n4. Hold this position for a brief moment, contracting your calf muscle (Tibialis anterior) and soleus.\n5. Lower your foot back to the starting position and repeat on the other side.\n6. Continue alternating legs and lifting heels for the desired number of repetitions.",
+  "short_summary": "The tibialis raise is an exercise that targets the muscles in the lower leg, specifically the calf (gastrocnemius), soleus, and peroneal muscles.",
   "muscles_used": [
-    "Tibialis Anterior",
-    "Calf"
+    "Calves",
+    "Soleus"
   ],
-  "equipment_used": [
-    "Chair",
-    "Bench",
-    "Step"
-  ],
-  "alternative_names": [
-    "Shin Raises",
-    "Ankle Dorsiflexion"
-  ]
+  "equipment_used": [],
+  "alternative_names": []
 }

@@ -1,15 +1,18 @@
 {
   "name": "Straight-arm Pull Down",
-  "how_to_perform": "1. Sit on the edge of a high bench or step with your feet flat on the floor, ensuring your body is directly over your hips and your back straight.\n \n2. Lean forward slightly by bending at the hips, keeping your back straight and maintaining an upright posture.\n\n3. Hold onto lat pull-down bar with hands shoulder-width apart, avoiding overlap of fingers.\n4. Engage core muscles to maintain straight posture while lifting arms upwards towards ceiling.\n\n5. Slowly lift both hands in a straight line above shoulders by pulling down on the bar,\n6. Focus contraction in lats muscles as arms reach overhead position.\n\n7. Pause at peak contraction for brief moment, avoiding swinging motion.\n8. Control your movement and slowly return to starting point.\n9. Repeat desired repetitions under guidance of trainer or coach.",
-  "short_summary": "Straight-arm pull down engages lat muscles while lifting upper arm into a straight line with shoulders, requiring back extensor control for proper execution.",
+  "category": "Back",
+  "how_to_perform": "1. Start by standing under a pull-down bar with your feet shoulder-width apart.\n2. Reach up and grab the bar with both hands, keeping your arms straight and your elbows locked out.\n3. Engage your core and lower back muscles to maintain proper posture throughout the exercise.\n4. Slowly lift your legs off the ground, keeping them straight and bracing yourself against any movement in your body.\n5. Pull the bar down towards your chest, focusing on using your upper back muscles to control the movement.\n6. Avoid hinging at the hips or arching your lower back as you pull the bar towards you.\n7. Hold for a brief moment, then slowly return the bar to its original position over your head,\n8. Repeat for the desired number of repetitions.",
+  "short_summary": "Straight-arm Pull Down targets the upper back muscles with a focus on control and proper posture",
   "muscles_used": [
-    "Latissimus Dorsi",
-    "Trapezius",
+    "Lats",
     "Rhomboids",
-    "Lower Back Extensors"
+    "Traps"
   ],
   "equipment_used": [
-    "Lat Pull-down Bar"
+    "Pull-down bar"
   ],
-  "alternative_names": []
+  "alternative_names": [
+    "Close Grip Pull Downs",
+    "Lat Pulldowns"
+  ]
 }

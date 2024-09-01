@@ -1,16 +1,15 @@
 {
   "name": "Shoulder Dislocates",
-  "how_to_perform": "1. Start by standing in an open space with your feet shoulder-width apart and a slight bend in your knees.\n\n2. Hold the bar or ring with both hands, placing your hands slightly wider than shoulder-width apart.\n\n3. Keeping your elbows straight, lift the weight upwards and away from your body, keeping it at arm's length.\n\n4. Focus on using your shoulders to drive the weight outward, squeezing the muscle as you extend.\n\n5. Pause briefly at the top of the movement, then slowly lower the weight back down to the starting position by hinging at the elbows.\n\n6. Repeat for the desired number of repetitions, maintaining control throughout the exercise.\n",
-  "short_summary": "Shoulder Dislocates are an isolation exercise targeting the middle deltoids and anterior deltoids.",
+  "category": "Shoulders",
+  "how_to_perform": "1. Start by lying on your back with your arms extended overhead and your legs in a table-top position, with your hands under your shoulders.\n2. Place a resistance band or cable over the highest point of your shoulder so that it is directly above your armpit.\n\n3. Slowly begin to lift your arm straight up and outwards, keeping the cable or resistance band taut throughout the movement.\n\n4. Continue lifting until your fist can barely touch the ceiling.\n\n5. Hold for a brief moment to emphasize contraction.\n\n6. Lower your arm back down to the starting position without releasing tension on the cable or resistance band throughout the movement.\n\n7. Repeat on the other side.",
+  "short_summary": "Shoulder dislocates are an upper body exercise that works the shoulders, targeting the supraspinatus and trapezius muscles.",
   "muscles_used": [
-    "Middle Deltoids",
-    "Anterior Deltoids"
+    "Shoulders",
+    "Neck"
   ],
   "equipment_used": [
-    "Bar or Ring"
+    "Resistance bands",
+    "Cable machine"
   ],
-  "alternative_names": [
-    "Dislocate to Lateral Raises",
-    "Shoulder Dislocating Press"
-  ]
+  "alternative_names": []
 }

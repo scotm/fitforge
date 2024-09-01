@@ -1,18 +1,16 @@
 {
   "name": "T-Bar Row",
-  "how_to_perform": "1. Start by standing facing a t-bar row machine or holding the ends of a barbell with your hands shoulder-width apart and a weightlifting strap on handgrips in front of you.\n\n2. Engage your core and maintain good posture throughout the exercise, keeping your back straight and your shoulders relaxed.\n\n3. With the bar resting across your upper back and the weight at chest height, slowly begin to stand up while maintaining control over the movement.\n\n4. Focus on keeping your elbows slightly above 90 degrees and directly behind your body as you lift the weight up with your arms, squeezing your latissimus dorsi muscles in the process.\n\n5. Pause for a brief moment at the top of the motion before slowly lowering the weight back down to the starting position in a controlled manner.\n\n6. Repeat for the desired number of repetitions while ensuring proper form and technique throughout.",
-  "short_summary": "T-bar rows are an upper body exercise primarily working the latissimus dorsi, with secondary engagement from other back muscles like teres major and trapezius.",
+  "category": "Back",
+  "how_to_perform": "1. Hold a T-bar handle with both hands, keeping your elbows slightly bent and your arms at shoulder height.\n2. Engage your core and maintain a straight back throughout the exercise.\n3. Keeping your upper body stable, lift the bar away from you by hinging at your hips and squeezing your lats.\n4. Focus on using your back and arm muscles to pull the T-bar towards your chest.\n5. Lower the bar back down to the starting position, trying not to swing or jerk it.\n6. Repeat for the desired number of repetitions.",
+  "short_summary": "T-Bar Rows are an upper body exercise that primarily targets the latissimus dorsi and other back muscles.",
   "muscles_used": [
-    "Latissimus Dorsi",
-    "Teres Major",
-    "Trapezius"
+    "Lats",
+    "Rhomboids"
   ],
   "equipment_used": [
-    "T-Bar Row Machine",
-    "Barbell"
+    "T-bar"
   ],
   "alternative_names": [
-    "Lat Pulldown",
-    "Barbell Rows"
+    "Pullover Lats"
   ]
 }

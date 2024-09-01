@@ -1,14 +1,16 @@
 {
   "name": "Upright Row, on Multi Press",
-  "how_to_perform": "1. First, adjust the multi press machine to fit your body, ensuring your arms are at a comfortable height and your back is supported.\n\n2. Place your hands shoulder-width apart on the bar handles of the machine so that they are facing downwards.\n3. With your feet shoulder-width apart and your back straight, place your shoulders directly over the stack and engage your core by pulling your belly button towards your spine.\n\n4. Next, lift the weight up from between the shoulder blades to above your head keeping your elbows high throughout the movement.\n5. Squeeze your shoulder muscles together at the top of the movement for a brief pause.\n\n6. Lower the weight back down to its starting position allowing it to rest between your shoulder blades and maintaining control on the descent.\n7. Repeat this process using alternating arms, or choose to alternate sides every two repetitions.\n8. Adjust the number of repetitions according to your desired fitness level.",
-  "short_summary": "The upright row machine exercise works your upper back muscles while reducing strain from conventional free weights allowing users to build strength at their own comfort",
+  "category": "Shoulders",
+  "how_to_perform": "1. Stand facing a multi press machine with the handles at shoulder height or slightly above.\n2. Grip the handles with an overhand grip, palms facing away from your body.\n3. Place your feet shoulder-width apart on either side of the machine and engage your core by pulling your belly button towards your spine.\n4. Pull the bars towards your chest while keeping your elbows high and tight against your sides, squeezing your shoulder blades together as you lift.\n5. Focus on using your shoulders to pull the weight up, avoiding swinging or jerking motions that can put unnecessary strain on your lower back.\n6. Once you've reached the top of the movement, slowly return the bars to the starting position and repeat for the desired number of repetitions.",
+  "short_summary": "The upright row is an upper body exercise targeting the shoulders, performed using a multi press machine.",
   "muscles_used": [
-    "Trapezius",
-    "Levator Scapulae",
-    "Rhomboids"
+    "Shoulders",
+    "Traps"
   ],
   "equipment_used": [
     "Multi press machine"
   ],
-  "alternative_names": []
+  "alternative_names": [
+    "Standing Upright Rows on Multi Press Machine"
+  ]
 }

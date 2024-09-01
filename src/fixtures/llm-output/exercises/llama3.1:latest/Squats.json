@@ -1,14 +1,18 @@
 {
   "name": "Squats",
-  "how_to_perform": "\n1. Stand with your feet shoulder-width apart, facing forward or slightly inward.\n2. Engage your core by pulling your belly button towards your spine, ensuring that your lower back remains neutral and your body forms a straight line from head to heels.\n3. Slowly bend your knees, lower your body downwards while keeping the weight in your heels. Reach forwards with your hands to maintain balance if needed.\n4. Continue lowering down until your thighs are parallel or below the level of your calves.\n5. Pause briefly at the bottom of the movement, ensuring that your spine remains neutral and your body still forms a straight line from head to heels.\n6. Push through your heels to return to the standing position, extending your knees fully but keeping your weight in your heels until you're back on both feet.\n7. Repeat for the desired number of repetitions, aiming to maintain control throughout the exercise.",
-  "short_summary": "Squats are a compound lower body exercise that works multiple muscles, including the quadriceps, hamstrings, glutes, and core.",
+  "category": "Legs",
+  "how_to_perform": "1. Start by standing with your feet shoulder-width apart, with your hands placed at your sides.\n2. Engage your core and lower your body down into a squat position, making sure to keep the weight back in your heels and not letting the knees stretch past your toes.\n3. Lower down so that your thighs are parallel to the ground or as low as is comfortable for you.\n4. Use your legs and glutes to push yourself back up to the starting position, squeezing them at the top of the movement.\n5. Repeat for the desired number of repetitions.",
+  "short_summary": "Squats are a lower body exercise that primarily works the quadriceps, hamstrings, glutes, and calve muscles.",
   "muscles_used": [
-    "Quadriceps",
+    "Glutes",
+    "Quads",
     "Hamstrings",
-    "Glutes"
+    "Calves",
+    "Lower back"
   ],
   "equipment_used": [],
   "alternative_names": [
-    "Bodyweight Squats"
+    "Bodyweight Squats",
+    "Chair Squats"
   ]
 }

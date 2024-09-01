@@ -1,14 +1,16 @@
 {
   "name": "Smith Press",
-  "how_to_perform": "1. Stand over a Smith machine with the bar at chest height, feet shoulder-width apart.\n2. With your hands gripping the bar equally, and palms facing each other, take a deep breath in and lock out elbows to prepare for lowering.\n3. Slowly lower the bar down towards your chest by bending your elbows, keeping control of the movement. Stop once you feel tension in your chest muscles.\n4. Pause briefly at the bottom of the movement.\n5. Press the bar upwards back to the starting position by straightening your arms, using the force primarily from your pectoralis muscles.\n\nEnsure proper technique throughout and avoid bending your knees or allowing your lower back to arch beyond normal spinal curvature.",
-  "short_summary": "The smith press is a chest exercise that targets the pectoralis muscle using a smith machine with the bar at chest height.",
+  "category": "Chest",
+  "how_to_perform": "1. Hold a Smith machine bar with your hands shoulder-width apart, palms facing away from you.\n\n2. Place your feet flat on the ground, directly under the bar.\n\n3. Lower yourself down by bending at the elbows until your upper arms are parallel to the ground and your chest almost touches the bar.\n\n4. Pause briefly at the bottom of the movement.\n\n5. Press upwards by extending your arms fully, squeezing your chest muscles as you reach the top of the movement.\n\n6. Repeat for the desired number of repetitions.",
+  "short_summary": "Smith press is a machine-based upper body exercise that primarily works the chest and shoulders.",
   "muscles_used": [
-    "Pectoralis",
-    "Triceps",
-    "Anterior Deltoids"
+    "Chest",
+    "Shoulders"
   ],
   "equipment_used": [
-    "Smith Machine"
+    "Smith machine bar"
   ],
-  "alternative_names": []
+  "alternative_names": [
+    "Machine Chest Press"
+  ]
 }

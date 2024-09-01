@@ -1,19 +1,19 @@
 {
   "name": "Sumo Deadlift",
-  "how_to_perform": "1. Start in a standing position with your feet wider than shoulder-width apart, toes pointed outward (forming a 'V' shape).\n\n2. Bend down and grasp an object with both hands using an underhand grip (palm-facing up), keeping your back straight and your core engaged.\n\n3. Take note of the positioning of your feet and body. Your feet should be pointing outward in a 'sumo' stance, whereas traditional deadlifts involve standing with feet shoulder-width apart or narrower.\n\n4. As you lift the object off the ground, make sure to keep your back straight and your core locked throughout the movement.\n\n5. Push through your heels as you lift the object towards hip-level, squeezing your glutes at the top of the movement to target additional muscle groups.\n\n6. Slowly lower the weight down to the starting position by bending your knees and keeping your back straight.\n\n7. Repeat for the desired number of repetitions, ensuring proper form and control throughout.",
-  "short_summary": "The Sumo Deadlift is a variation of the traditional deadlift that targets the entire glutes, hamstrings, low back muscles, as well as engages core muscles to maintain correct posture.",
+  "category": "Legs",
+  "how_to_perform": "1. Start with your feet shoulder-width apart, but slightly wider than your body's natural stance. Place your toes pointing outward, away from the center of your body.\n\n2. Hold a weight or barbell with an overhand grip, making sure to lift your elbows off your hips and to maintain a straight line from head to heels. \n\n3. Bend at your knees, lowering your body down towards the ground, keeping your back straight and squeezing your glutes as you descend.\n\n4. As you lower yourself, reach forward slightly with your feet while maintaining good posture.\n\n5. Keep your chest high and shoulders relaxed, focus on engaging your core throughout the movement.\n\n6. Reach low enough to grip the weight or barbell with an overhand grip.\n\n7. Drive through your heels, straighten your legs and squeeze your glutes to lift the weight off the ground, fully extending your body.\n\n8. Focus on keeping your posture correct during the entire range of motion, maintaining a tall spine throughout all four planes of movement (sagittal, frontal, transverse), as well as a vertical posture, squeezing your glutes upon full extension to minimize excessive sway and instability in lower back region.\n    \n9. Hold at the top of the lift for about 1-2 breaths then slowly repeat the process for the desired numberof repetitions.",
+  "short_summary": "A deadlift variation that emphasizes sumo stance instead of hip-width one, activating more quadriceps, hamstrings and lower back muscles.",
   "muscles_used": [
     "Glutes",
+    "Quads",
     "Hamstrings",
-    "Low Back Muscles",
-    "Core"
+    "Lower back"
   ],
   "equipment_used": [
-    "Barbell or Dumbbells",
-    "Weight Plate or Kettlebel"
+    "Weight bar or weights",
+    "Platform mat"
   ],
   "alternative_names": [
-    "Wide-Stance Deadlifts",
-    "Sumo Squats with Bar"
+    "Sumo Deadlift with weight"
   ]
 }

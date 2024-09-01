@@ -1,12 +1,16 @@
 {
   "name": "Shoulder Press, on Machine",
-  "how_to_perform": "# Shoulder Press Machine Exercise Instructions\n\n## Step-by-Step Guide:\n\n1. Start by sitting comfortably in the shoulder press machine with your back against the pad and feet flat on the floor.\n2. Adjust the seat height to fit you comfortably.\n3. Wrap your hands around the bar, keeping your palms facing forward.\n4. Grasp the bar firmly but not too tightly.\n5. Press the machine's armrests or handles to secure yourself in place.\n6. Extend your arms fully by pushing the bar upwards until they are almost fully straightened.\n7. Engage your core and keep your back and shoulders relaxed.\n8. Slowly lower the weight down to about 45 degrees (midpoint of your journey) without losing control of the movement.\n9. Pause briefly at the bottom before lifting again, keeping the focus on using your deltoids to lift the dumbbells upwards.\n10. Continue doing these motions for the desired number of repetitions.\n\n## Safety Reminders:\n- Use shoulder rolls to warm up shoulders before engaging in heavy presses.\n- Keep a 1.5 inch or more space between bar handles and ears as recommended by health experts.\n- Always start slowly as a starting position, especially when working with heavy weights.",
-  "short_summary": "Shoulder Press on Machine isolates the deltoids to build shoulder strength",
+  "category": "Shoulders",
+  "how_to_perform": "1. Adjust the machine seat height to suit your body.\n2. Sit down on the shoulder press machine and secure yourself in place with the safety bar.\n3. Grasp the handles firmly with your hands shoulder-width apart (or as per specifications).\n4. Extend your arms fully, pressing your shoulders against the back pad to ensure full range of motion.\n5. Slowly lower the weight by bending your elbows, keeping control throughout the movement.\n6. Pause briefly at the bottom of the movement to maintain a slight stretch in your shoulders and upper body.\n7. Press the weight upwards, using your shoulder muscles to lift.\n8. Continue for the desired number of repetitions.",
+  "short_summary": "Shoulder press on machine is an isolated exercise that targets the front and lateral deltoids effectively, allowing you to build more balanced and symmetrical muscle mass across the shoulders.",
   "muscles_used": [
-    "Deltoids"
+    "Shoulders",
+    "Neck"
   ],
   "equipment_used": [
-    "Shoulder press machine"
+    "Adjustable shoulder press machine"
   ],
-  "alternative_names": []
+  "alternative_names": [
+    "Machine Shoulder Press"
+  ]
 }

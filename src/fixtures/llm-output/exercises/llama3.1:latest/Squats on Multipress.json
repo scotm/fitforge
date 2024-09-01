@@ -1,17 +1,16 @@
 {
   "name": "Squats on Multipress",
-  "how_to_perform": "# Squats on Multipress\n1. Start by standing in front of a multipress machine, with the platform set to the desired height.\n2. Place your feet shoulder-width apart and slightly wider than hip-width, facing the machine.\n3. Engage your core and take note of the proper stance and setup for optimal performance.\n\n4. Lower yourself down into a squat position, keeping your back straight, chest up, head down, shoulders relaxed, and glutes tight.\n5. Lower yourself to the platform height (typically just shorter than knee-level), but not touching it. This would make the movement purely vertical.\n6. Stop for 2–3 seconds as you touch each platform once at the midline of your thigh muscles on both sides below 90 degrees in range-of-motion motion.\n7. Then, push yourself back up to standing position maintaining control over the descent,\n8. Repeat with proper posture from 1-50 repetitions (according to training goals and experience) before resting.\n\n",
-  "short_summary": "Squats on a multipress are strength exercises designed to train various lower body muscles via leg movement.",
+  "category": "Legs",
+  "how_to_perform": "1. Stand in front of a multipress machine, with the handle at shoulder height.\n2. Grip the handle firmly with both hands and place your feet slightly narrower than shoulder width apart.\n3. Hold the handle and engage your core by drawing your belly button towards your spine.\n4. Bend your knees as if you were going to sit down, keeping your back straight and your weight evenly distributed between both legs.\n5. Lower yourself down until your thighs are parallel to the ground, maintaining a controlled pace throughout the movement.\n6. Pause briefly at the bottom of the movement, ensuring that your posture remains correct.\n7. Push through your heels to return to the starting position, extending your legs fully as you lift.\n8. Repeat for the desired number of repetitions.",
+  "short_summary": "Squats on Multipress is a machine-based upper body exercise that primarily works the quads and glutes, targeting muscle groups in the lower body.",
   "muscles_used": [
-    "Legs",
-    "Glutes",
-    "Core"
+    "Quads",
+    "Glutes"
   ],
   "equipment_used": [
-    "Multi-press machine platform"
+    "Multipress machine"
   ],
   "alternative_names": [
-    "Multipress Squats",
-    "Squat-Leg-Press machine"
+    "Leg Press Squats"
   ]
 }

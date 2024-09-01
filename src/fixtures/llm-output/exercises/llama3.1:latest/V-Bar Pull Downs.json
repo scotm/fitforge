@@ -1,18 +1,16 @@
 {
   "name": "V-Bar Pull Downs",
-  "how_to_perform": "1. Sit at a cable machine with your knees securely under the pad and your back to the machine. Grip the V-bar attachment with both hands, keeping your elbows slightly wider than shoulder-width apart.\n\n2. Lean back slightly and lift your chest up, engaging your core muscles to maintain control throughout the exercise.\n\n3. Pull down on the V-bar with both arms, keeping the bar close to your chest and focusing on squeezing your lats at the top of the movement.\n\n4. Avoid using momentum or jerky movements, instead maintaining a steady, controlled motion as you perform the pull-downs.\n\n5. Focus on pulling from your back and shoulders, rather than simply relying on arm strength.\n\n6. As you reach the bottom of the movement, pause briefly to ensure maximum contraction in your lat muscles before slowly releasing the bar back up to the starting position.\n\n7. Repeat for the desired number of repetitions.",
-  "short_summary": "V-Bar Pull Downs are an upper body exercise that primarily targets the latissimus dorsi muscle in conjunction with other supporting muscles.",
+  "category": "Back",
+  "how_to_perform": "1. Grasp the V-bar attachment with an overhand grip, hands shoulder-width apart.\n2. Sit at the end of a lat pulldown machine with your knees securely under the knee pad and feet flat on the floor.\n\n3. Pull the bar down towards your ribcage by squeezing your back muscles. Focus on using the lats to pull the weight down rather than just your arms.\n4. Avoid swinging or jerking the weight, as this can compromise proper form and put a strain on your joints.\n5. When you've fully contracted your back muscles and pulled the bar to your chest, pause briefly before beginning your repetition.\n\n6. Slowly release the tension in your back muscles by extending your arms without letting the weight bounce or jerk.\n7. Repeat for the desired number of repetitions.",
+  "short_summary": "V-bar pull downs are a back exercise that targets the latissimus dorsi and other muscle groups used to stabilize the spine.",
   "muscles_used": [
-    "Latissimus Dorsi",
-    "Trapezius",
-    "Rhomboids",
-    "Upper Back"
+    "Lats",
+    "Brachialis",
+    "Forearms"
   ],
   "equipment_used": [
-    "Cable machine with V-bar attachment"
+    "Lat pulldown machine with V-bar attachment",
+    "Cable system"
   ],
-  "alternative_names": [
-    "Lats",
-    "Pull Downs"
-  ]
+  "alternative_names": []
 }

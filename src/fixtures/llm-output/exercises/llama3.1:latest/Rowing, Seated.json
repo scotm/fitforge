@@ -1,18 +1,20 @@
 {
   "name": "Rowing, Seated",
-  "how_to_perform": "1. Start by sitting in a sturdy chair with your back straight and your feet flat on the ground.\n\n2. Hold a rowing handle or similar device firmly with both hands, with your palms facing towards your body.\n\n3. Keeping your arms straight, lean forward slightly to stretch your chest muscles.\n\n4. Engage your core and maintain good posture throughout the exercise.\n\n5. Pull the handle towards your chest by bending your elbows, keeping them close to your body.\n\n6. Focus on using your back muscles (latissimus dorsi) to draw the handle toward your body, rather than relying solely on arm strength.\n\n7. As you return to the starting position, keep control of the movement and take a brief moment to rest before repeating the exercise.\n",
-  "short_summary": "Seated rowing is an upper-body exercise that specifically targets the back muscles (latissimus dorsi) and works secondary muscle groups.",
+  "category": "Back",
+  "how_to_perform": "1. Sit on a chair or bench with your feet flat on the floor and hold onto the edge of the seat with both hands.\n\n2. Keeping your core engaged, straighten your back and lift your chest to form a long line from head to heels. Keep your shoulders relaxed.\n\n3. Pull one end of the rowing bar (or towel) towards you as if trying to grab it with your hands, keeping your elbows close to your body throughout the movement.\n\n4. Focus on using your muscles in your back to pull the bar towards your chest, keeping your shoulders down and relaxed.\n\n5. Slowly allow the bar to return back to its original position without bouncing or swinging it back out.\n\n6. Repeat on the other side by pulling the bar in the opposite direction with your hands.\n\n7. Continue rowing across from one end of you to the other for the desired number of repetitions.",
+  "short_summary": "Rowing involves using your arms and core muscles to pull a weight or bar, simulating the motion of rowing while seated.",
   "muscles_used": [
-    "Latissimus Dorsi",
-    "Trapezius",
+    "Lats",
     "Rhomboids",
-    "Levator Scapulae"
+    "Lower back",
+    "Traps"
   ],
   "equipment_used": [
-    "Rowing handle or similar device"
+    "Seat with handrails (e.g. chair)",
+    "Rowing bars or towels"
   ],
   "alternative_names": [
-    "Seated Row Exercise",
-    "Isolated Seated Lat Pulldowns"
+    "Seated Row",
+    "Bent-Over Row"
   ]
 }

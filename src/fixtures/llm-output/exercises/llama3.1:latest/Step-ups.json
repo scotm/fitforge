@@ -1,17 +1,20 @@
 {
   "name": "Step-ups",
-  "how_to_perform": "1. Choose a sturdy step or bench that is about 6-12 inches high. Make sure the surface you're stepping onto is stable and flat.\n\n2. Stand in front of the step with your left foot (if performing for the right leg). Your left foot should be resting on the ground, directly in front of the edge of the step, while your right foot is on top of the step.\n\n3. Keep your back straight, engage your core muscles to maintain stability as you lift yourself up onto the step with one foot and alternate legs with each repetition.\n\n4. From the standing position at the side of the step (left foot on ground, right foot on step), take a step up with the right foot and bring it up to meet the left foot on top of the step in front of you. This will be your start position for the next repetition.\n\n5. Carefully take one large step downward from the top of the step landing back onto the ground directly in front of the edge of the step, this concludes the first step down part of a single repetition and effectively bringing yourself back to the starting position for the next attempt.\n6. Step up with your left foot onto the step for an additional exercise repetition using the same pattern described previously, alternate leg usage will be maintained throughout multiple repetitions.\n\n7. Push yourself away from the exercise once completed by walking slowly towards another area.",
-  "short_summary": "Step-ups involve stepping up and down on a bench or other elevated surface, targeting muscles of the lower body while engaging core",
+  "category": "Legs",
+  "how_to_perform": "1. Choose a sturdy staircase, bench, or step.\n2. Stand in front of the step with your right foot on the ground and your left foot on the step.\n3. Keep your back straight, abs engaged, and your chest out as you lift your right foot onto the step.\n4. Step up fully and bring both feet onto the step, ensuring that your weight is evenly distributed between both legs.\n5. Pause briefly at the top of the movement.\n6. Slowly lower yourself by stepping down with one foot (either foot, alternate with each repetition) until your starting position is reached.\n7. Repeat for the desired number of repetitions on each leg.",
+  "short_summary": "Step-ups are a lower body exercise that primarily target the quadriceps, glutes, and calves.",
   "muscles_used": [
-    "Quadriceps",
-    "Hamstrings",
     "Glutes",
+    "Quads",
     "Calves"
   ],
   "equipment_used": [
-    "Step or bench"
+    "Staircase",
+    "Bench",
+    "Step"
   ],
   "alternative_names": [
-    "Step-up exercises"
+    "Bench steps",
+    "Box jumps (if explosive jumping motion is used)"
   ]
 }

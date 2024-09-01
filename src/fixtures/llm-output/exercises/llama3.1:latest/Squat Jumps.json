@@ -1,16 +1,18 @@
 {
   "name": "Squat Jumps",
-  "how_to_perform": "1. Start in a standing position, with your feet shoulder-width apart and your hands by your sides.\n2. Lower yourself into a squat, keeping your back straight and your core engaged. Keep your weight evenly distributed between both feet.\n\n3. From the lowest point of the squat, explosively jump up from the ground, extending your legs fully. Your arms should remain in a bent position, with your elbows close to your body.\n4. As you jump, keep your posture upright and your balance stable.\n\n5. Briefly touch down on the balls of your feet before immediately jumping again.\n6. Repeat this process for the desired number of repetitions, keeping your landing quiet and in control throughout the exercise.",
-  "short_summary": "Squat jumps are an explosive lower body exercise that works multiple muscle groups and can be performed without any equipment",
+  "category": "Cardio",
+  "how_to_perform": "1. Start by standing with your feet shoulder-width apart, toes pointing forward or slightly outward.\n2. Lower your body down into a squat position, keeping your back straight and your weight centered over your feet.\n3. Push explosively upwards from the squat position, extending your hips and knees fully.\n4. Land softly on the balls of your feet before immediately repeating the movement, trying to land in the same position as when you started.\n5. Continue alternating between squatting and jumping for the desired duration,\n6. Engage your core by drawing your belly button towards your spine\n7. Try to perform the squats quickly but explosively, using your legs and glutes to drive yourself upwards",
+  "short_summary": "Squat Jumps are a plyometric exercise that involves rapid repetition of squat movements, providing a cardio-intensive workout while improving strength in the leg muscles.",
   "muscles_used": [
-    "Quadriceps",
-    "Hamstrings",
     "Glutes",
+    "Quads",
+    "Hamstrings",
     "Calves"
   ],
   "equipment_used": [],
   "alternative_names": [
-    "Depth Jumps",
-    "Box Jumps (without a box)"
+    "Box Jumps",
+    "Depth Jump",
+    "Squat Thrusts"
   ]
 }

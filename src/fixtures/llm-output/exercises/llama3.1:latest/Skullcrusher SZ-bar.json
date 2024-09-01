@@ -1,14 +1,17 @@
 {
   "name": "Skullcrusher SZ-bar",
-  "how_to_perform": "1. Start by lying on a flat surface with your back supported by the ground and your feet shoulder-width apart.\n2. Hold an SZ-bar or a similar barbell over your shoulders with your hands shoulder-width apart, palms facing upwards.\n*Markdown formatting not possible in this case*\n\n3. Press the bar down into the ground below you by straightening your arms fully.\n4. Keeping your elbows close to the back of your head and your upper arms still, slowly lower the weight down behind your head by bending at the elbow joint.\n5. Stop briefly when the bar is about an inch above the ground.\n\n6. Push yourself back up to the starting position by straightening your arms fully once again.\n7. Repeat for the desired number of repetitions, keeping control and smoothness throughout the movement.",
-  "short_summary": "Skullcrusher is a strength training exercise that targets the triceps, shoulders, and chest muscles when performed with an SZ-bar.",
+  "category": "Legs",
+  "how_to_perform": "1. Lie on your back with your knees bent and feet flat on the ground, hip-width apart.\n2. Hold an SZ-bar over your chest, with your arms fully extended above your head.\n3. Lower the bar to a position directly above your forehead, keeping your elbows slightly bent.\n4. Then, explosively press the bar upwards towards the ceiling, straightening your arms completely.\n5. Avoid arching your back or using momentum to lift the weight.\n6. Contract your core muscles and maintain a stable torso throughout the movement.\n7. Repeat for the desired number of repetitions.",
+  "short_summary": "Skullcrusher SZ-bar is upper body exercise targeting shoulder muscles, performed by lowering an SZ-bar from overhead to over the forehead then explosively pressing it upwards.",
   "muscles_used": [
-    "Triceps",
     "Shoulders",
-    "Chest"
+    "Traps"
   ],
   "equipment_used": [
     "SZ-bar"
   ],
-  "alternative_names": []
+  "alternative_names": [
+    "Neck Bridge",
+    "Bridge Press"
+  ]
 }

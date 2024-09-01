@@ -1,14 +1,18 @@
 {
   "name": "Standing Bicep Curl",
-  "how_to_perform": "1. Start by standing with your feet shoulder-width apart, facing a flat surface where you will place the dumbbells.\n2. Hold a dumbbell in each hand, keeping your palms facing forward and your elbows close to your body at around 90-degree angle.\n3. Engage your core muscles and keep your shoulders down and away from your ears.\n4. Slowly curl the dumbbells up towards your shoulders, keeping your upper arms still and only moving your forearms.\n5. Pause briefly in the contracted position.\n6. Then slowly reverse the movement, lowering the dumbbells back to the starting position.\n7. Repeat for the desired number of repetitions, keeping your core tight and your movements controlled throughout the exercise.",
-  "short_summary": "Standing bicep curl is a simple yet effective exercise that targets the biceps muscles, making them feel stronger.",
+  "category": "Arms",
+  "how_to_perform": "1. Stand with your feet shoulder-width apart, holding a dumbbell or barbell with both hands at your sides.\n2. Keeping your arms straight and your palms facing forward, slowly lift the weight up towards your shoulders by bending your elbows.\n3.Tighten your biceps and hold for a brief moment before squeezing them further if possible.\n4.Slowly return to the starting position with control.",
+  "short_summary": "The standing bicep curl is an upper-body exercise that primarily works the biceps, using dumbbells or barbells.",
   "muscles_used": [
-    "Biceps"
+    "Biceps",
+    "Forearms"
   ],
   "equipment_used": [
-    "Dumbbells"
+    "Dumbbell",
+    "Barbell"
   ],
   "alternative_names": [
-    "Straight Arm Bicep Curls"
+    "Bicep Curl",
+    "Overhead Bicep Curl"
   ]
 }

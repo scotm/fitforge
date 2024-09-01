@@ -1,18 +1,19 @@
 {
   "name": "Squat Box",
-  "how_to_perform": "1. Place the box behind you and stand with your feet shoulder-width apart, facing away from the box.\n\n2. Slowly lower yourself down into a squat position by bending your knees, keeping your back straight and your core engaged.\n\n3. As you descend into the squat, keep your weight centered over your feet and engage your leg muscles to maintain balance.\n\n4. Keep the box in front of you to support your body if needed, but aim to do the movement without assistance.\n\n5. Pause briefly at the bottom of the squat position to ensure control and engagement.\n\n6. Push through the heels of your feet to return to the starting position, maintaining a smooth and controlled movement throughout.\n\n7. Repeat for the desired number of repetitions, keeping proper form and focus on leg strength.",
-  "short_summary": "The Squat Box is an exercise that targets various muscle groups in the legs, hips, and lower back, performed with a support box.",
+  "category": "Legs",
+  "how_to_perform": "1. Start by standing in front of a box (or bench) with your feet shoulder-width apart, toes facing forward.\n2. Take a deep breath and slowly begin to lower yourself down onto the box, keeping your back straight and your core engaged.\n3. Lower your body until your thighs are parallel to the ground, aiming to descend to around 90-degrees from 180-degrees at the starting point.\n4. Pause briefly at this position before initiating a controlled ascent.\n5. Push yourself up off the box using your heels, ensuring that you fully straighten your legs and return to the starting position.\n\n",
+  "short_summary": "The squat box is an exercise that targets the quadriceps muscles, glutes, hamstrings, calves, and lower back.",
   "muscles_used": [
-    "Quadriceps",
-    "Hamstrings",
+    "Quads",
     "Glutes",
-    "Core"
+    "Hamstrings",
+    "Calves",
+    "Lower back"
   ],
   "equipment_used": [
-    "Box or bench"
+    "Box (or bench)"
   ],
   "alternative_names": [
-    "Bodyweight Squat Box",
-    "Depth Step-Up"
+    "Low Box Squats"
   ]
 }

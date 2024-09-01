@@ -1,20 +1,18 @@
 {
   "name": "Front Wood Chop",
-  "how_to_perform": "1. Start by holding a weight or object (such as a medicine ball) with both hands, standing with your feet shoulder-width apart.\n2. The key to this exercise is generating power from your core and hips. \n3. Twist your torso to one side while keeping the weight close to your body, using a forceful chopping motion with your arms. Make sure your arms are straight and your elbows locked out when you twist.\n4. Keep your twisting motion controlled and smooth, avoiding any jerky movements that could put unnecessary stress on your joints.\n5. Hold for a brief moment at the peak of your movement before slowly releasing back to the starting position.\n6. Repeat the exercise on the other side by twisting your torso the opposite direction.",
-  "short_summary": "Front Wood Chops are an effective exercise for targeting the core muscles, specifically engaging the obliques and hip flexors.",
+  "category": "Arms",
+  "how_to_perform": "1. Hold a weight or medicine ball with both hands, keeping your arms straight and your elbows locked.\n2. Keeping your back straight and your core engaged, lift the weight up and forward, keeping it close to your body until you reach the maximum angle of about 90 degrees.\n3. Focus on using your shoulders, specifically the deltoids, to drive the movement. Avoid using momentum or swinging the weight.\n4. Slowly lower the weight back down to the starting position, keeping control throughout the entire range of motion.\n5. Repeat for the desired number of repetitions.",
+  "short_summary": "The front wood chop is an upper body exercise that primarily works the shoulders and arms, while also engaging the core muscles.",
   "muscles_used": [
-    "Obliques",
-    "Hip Flexors",
-    "Core",
-    "Shoulders"
+    "Shoulders",
+    "Serratus anterior",
+    "Brachialis"
   ],
   "equipment_used": [
-    "Medicine ball",
-    "Weight"
+    "Weight or medicine ball"
   ],
   "alternative_names": [
-    "Cirrus",
-    "Front Russian twists",
-    "Russian wood chops"
+    "Barbell Front Row",
+    "Incline Dumbbell Front Raise"
   ]
 }

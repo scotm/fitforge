@@ -1,13 +1,17 @@
 {
   "name": "Side-lying External Rotation",
-  "how_to_perform": "1. Lie on your side with your feet touching, keeping your feet and hips in a straight line. Place the top arm (for example, your right arm) on your hip, palm facing downwards.\n2. Place your bottom leg across the top leg, forming an L-shape with your legs.\n\n3. As you perform this exercise, keep both shoulders relaxed and down from ears, maintaining a natural arch in your lower back.\n\n4. Rotate your top arm, keeping it close to your body, so that your hand is facing away from your body and across the bottom leg.\n\n5. Focus on squeezing your shoulder and rotating at the glenohumeral joint (shoulder joint). Hold for 1-2 seconds, then slowly return to starting position.\n\n6. Repeat for the desired number of repetitions or sets.",
-  "short_summary": "Side-lying external rotation is a unilateral upper body exercise that targets the rotator cuff, specifically the deltoids and subscapularis muscles, helping improve shoulder stability.",
+  "category": "Shoulders",
+  "how_to_perform": "1. Lie on your side with your feet touching and your bottom layer (your legs) at the top. Place a resistance band or cable above you, perpendicular to your body.\n\n2. With your arm above your shoulder, grasp the resistance band/cable as if to do an external rotation.\n\n3. Keeping your upper arm stable, rotate your forearm externally by bringing your hand towards your back and keeping them aligned along your spine.\n\n4. Focus on isolating the rotational movement starting from your mid-shoulder to your wrist without shifting your torso or lower limb position.\n\n5. Hold for a brief moment before returning the arm slowly to its original position. \n\n6. Repeat for the desired number of repetitions, keeping your core tight and your shoulder blades stable throughout.",
+  "short_summary": "Side-lying external rotation is an isolation exercise focused on developing strength in the rotational muscles around the shoulder joint and improving flexibility.",
   "muscles_used": [
-    "Deltoids",
-    "Subscapularis",
-    "Rotators Cuff",
-    "Core"
+    "Shoulders",
+    "Traps"
   ],
-  "equipment_used": [],
-  "alternative_names": []
+  "equipment_used": [
+    "Resistance band/cable"
+  ],
+  "alternative_names": [
+    "External Rotation",
+    "Rotational Exercise"
+  ]
 }

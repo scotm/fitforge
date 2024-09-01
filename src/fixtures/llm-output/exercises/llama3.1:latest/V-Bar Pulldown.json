@@ -1,17 +1,18 @@
 {
   "name": "V-Bar Pulldown",
-  "how_to_perform": "\n1. Sit at a high-cable pulley station with your knees securely under the knee pad and your back against the pad.\n2. Grasp the V-bar attachment with a shoulder-width overhand grip, keeping your hands facing towards your body.\n3. Keeping your core engaged and your back straight, pull the bar down to your chest, squeezing your lats at the top of the movement.\n4. Slowly return the bar to its starting position above your head, avoiding swinging or jerking movements.\n5. Repeat for the desired number of repetitions, focusing on using your latissimus dorsi muscles to control the movement.\n6. Maintain proper form and engage your core throughout the exercise.",
-  "short_summary": "The V-bar pulldown is an upper body exercise that targets the latissimus dorsi muscles in charge of pulling movements.",
+  "category": "Back",
+  "how_to_perform": "1. Sit down at a V-bar pulldown machine with your knees safely under the knee pad and your feet flat on the floor.\n\n2. Grasp the bar with an overhand grip, hands shoulder-width apart.\n\n3. Keeping your back straight and your core engaged, lift your feet off the ground by pulling your heels towards you to minimize momentum and maintain control.\n\n4. Slowly pull the bar down toward your chest by squeezing your shoulder blades together, keeping your elbows close to your body.\n\n5. Focus on using your lats to pull the bar towards your upper back, avoiding arching your back or swinging the weight.\n\n6. When the bar reaches the top of its travel, pause briefly at the contraction position.\n\n7. Slowly release the bar back to the starting position while maintaining a controlled motion throughout the movement.",
+  "short_summary": "The V-bar pulldown is an isolation exercise primarily targeting the latissimus dorsi muscles in your upper back.",
   "muscles_used": [
-    "Latissimus Dorsi",
-    "Rhomboids",
-    "Trapezius",
-    "Biceps"
+    "Lats",
+    "Lower back",
+    "Rhomboids"
   ],
   "equipment_used": [
-    "Cable Pulley System / High-Cable Machine",
-    "V-bar Attachment",
-    "Resistance Bands"
+    "V-Bar Pulldown Machine"
   ],
-  "alternative_names": []
+  "alternative_names": [
+    "Pulldowns",
+    "Lat Pulldowns"
+  ]
 }

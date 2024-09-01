@@ -1,16 +1,17 @@
 {
   "name": "Triceps Pushdown",
-  "how_to_perform": "1. Start by sitting on a cable machine with your body perpendicular to the cable's path and a bar attached in front of you.\n\n2. Hold the bar with an underhand grip, with your hands spaced about shoulder-width apart.\n\n3. Keeping your elbows close to your body, extend the bar downwards away from your body until your arm is fully extended.\n\n4. Focus on using only your triceps to lift the weight back up towards your chest.\n\n5. As you complete a repetition, pause briefly before returning the bar to its starting position and repeating the movement.\n\n6. Continue for the desired number of repetitions.",
-  "short_summary": "Triceps pushdowns are an isolation exercise that target the triceps muscle using resistance from a cable machine.",
+  "category": "Arms",
+  "how_to_perform": "1. Start by sitting at a cable machine with the cable set to its lowest position.\n*2. Place your hands on the bar, shoulder-width apart and your arms fully extended.\n*3. Lower the bar down towards your mid-chest area by bending your elbows until they are at about a 90-degree angle or slightly below.\n\n4. Pause briefly for a second at the bottom of the movement.\n\n5. Push the bar back to its highest point by straightening your elbows and then fully extending them.\n*6. Repeat this process for the desired number of repetitions, keeping your movements controlled throughout the exercise.",
+  "short_summary": "The triceps pushdown is an isolation exercise that specifically targets the triceps muscle in the upper arm while being assisted with a cable machine.",
   "muscles_used": [
     "Triceps"
   ],
   "equipment_used": [
-    "Cable machine",
-    "Bar attachment"
+    "Cable Machine",
+    "Tricep Rope Attachment"
   ],
   "alternative_names": [
-    "Overhead Tricep Extensions with Cable",
-    "Cable Tricep Extension"
+    "Cable Overhand Tricep Extension",
+    "Overhead Cable Tricep Extension"
   ]
 }

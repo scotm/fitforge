@@ -1,11 +1,17 @@
 {
   "name": "Swimming 50m Sprints",
-  "how_to_perform": "1. Start in the water at one end of a pool, with your back to the starting point and feet anchored to the bottom.\n\n2. Use a streamlined body position, tucking your chin into your chest and keeping your body as horizontal as possible.\n\n3. Build up speed by using powerful strokes, drawing your arms through the water from a vertical position and pushing off from the bottom with one foot and then the other at different phases of each stroke [e.g. on backstroke - right arm and left leg alternate; on freestyle, butterfly or breaststroke, different arm-leg pairings alternate].\n\n4. Keep your body rotation minimal while using wide overhand strokes. Aim for a consistent speed without sacrificing technique.\n\n5. To maximize efficiency and gain, aim to reach the water surface at the 25-meter mark to prepare yourself psychologically for the final stretch of acceleration.\n\n6. Finish with another sprint of power and propulsion between the 45 and 50 meters marks, aiming a strong, consistent performance throughout your run.\n\n7. Repeat the sprinting exercise over desired number of repetitions with correct warm-up procedure beforehand.",
-  "short_summary": "Swimming sprints are high-intensity interval training that involves sprinting at maximum speed for short distances within the water to improve cardiovascular fitness and aerobic capacity.",
+  "category": "Cardio",
+  "how_to_perform": "**Step 1: Warm-up**\n1. Start by swimming a gentle stroke, such as the freestyle or backstroke, to warm up your muscles.\n\n**Step 2: Sprinting**\n1. Once you are warmed up, start sprinting through the water at maximum effort for 50 meters.\n2. Focus on using your proper technique and body position to generate force.\n3. Engage your core and use your arms and legs in sync to propel yourself forward.\n4. Maintain a fast tempo throughout the sprint, breathing normally or with occasional small breaths when needed.\n\n**Step 3: Resting and Repeating**\nThe final step is to rest for as short a time as possible (about 20-30 seconds) before starting another sprint.",
+  "short_summary": "Swimming sprints over a distance of 50 meters are high-intensity exercises that improve cardiovascular fitness, boost speed and power in the water, and enhance overall muscle strength.",
   "muscles_used": [
-    "Pectoralis",
-    "Deltoids"
+    "Quads",
+    "Hamstrings",
+    "Glutes",
+    "Lower back",
+    "Shoulders"
   ],
-  "equipment_used": [],
+  "equipment_used": [
+    "Pool"
+  ],
   "alternative_names": []
 }

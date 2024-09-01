@@ -1,15 +1,17 @@
 {
   "name": "Single Leg Extension",
-  "how_to_perform": "1. **Lie on your back with your legs extended and your feet flexed.**\n2. Slowly lift your left foot (the non-working leg) off the ground, keeping it straight.\n3. Focus on engaging your core muscles to maintain stability and control throughout the exercise.\n4. Lift your right leg 6-8 inches off the ground, extending it fully without bending at the knee or hips.\n5. Pause briefly at the top of the movement.\n6. Slowly lower your right leg back down to the starting position without touching the floor below this point. \n7. Repeat on the opposite side with the other leg by lifting the left foot and lowering the right foot to the ground.",
-  "short_summary": "Single Leg Extension is an exercise targeting the glutes, hamstrings, adductors and core muscles, which requires lying down and elevating one leg off the ground.",
+  "category": "Legs",
+  "how_to_perform": "1. Lie on your back with one leg straight and the other bent at a 90-degree angle.\n2. Engage your core by drawing your belly button towards your spine, and gently lift your straightened leg off the ground while keeping the other leg flexed.\n3. Extend your elevated leg as far behind you as comfortably possible without sacrificing form or straining your lower back muscles.\n4. Slowly lower your raised leg down to about 1-2 inches above the floor before carefully lifting it up again.\n5. Repeat for the desired number of repetitions, focusing on maintaining control over your movements and proper engagement in your core.",
+  "short_summary": "Single Leg Extension is an isolation exercise that primarily targets the quadriceps while requiring activation from other leg muscles to maintain form.",
   "muscles_used": [
-    "Glutes",
+    "Quads",
     "Hamstrings",
-    "Adductors",
-    "Core"
+    "Glutes"
   ],
   "equipment_used": [],
   "alternative_names": [
-    "Standing Single Leg Extension"
+    "1-Legged Leg Press",
+    "Isometric Quad",
+    "Leg Extension Isolation"
   ]
 }

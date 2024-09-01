@@ -1,18 +1,15 @@
 {
   "name": "Seated Hip Adduction",
-  "how_to_perform": "1. Sit on a hip adductor machine at the gym, or use a resistance band attached to a stable object.\n\n2. Place the middle of the resistance band below your knees, just above the ankle joint. Position them in line with each other.\n\n3. Slowly lift both legs outwards and away from each other until they are straight. Be careful not to swing or jerk the movement.\n\n4. Pause briefly at the top of the movement.\n\n5. Slowly push both legs back together towards your body, keeping them parallel to each another, using the muscles in front of your hip.\n\n6. Continue alternating between extending and adducting (moving together) for multiple repetitions, focusing on contracting and releasing the adductor muscles at a controlled pace.",
-  "short_summary": "Seated hip adduction targets the muscles on the inside of your thighs to improve their strength and flexibility.",
+  "category": "Legs",
+  "how_to_perform": "1. Sit on the floor with your legs straight out in front of you.\n2. Bring your toes together and let your knees relax, keeping them slightly bent if necessary for comfort.\n3. Slowly lift both legs up and away from your body, squeezing your glutes at the top as you adduct your hips.\n4. Hold this contraction for a brief moment to emphasize the gluteal activation, then slowly lower your legs back down to the starting position.\n5. Continue repeating the movement for the desired number of repetitions.",
+  "short_summary": "Seated hip adduction is an isolation exercise targeting the gluteus medius muscle in the hips, performed by lifting legs up and away from the body while seated on the floor.",
   "muscles_used": [
-    "Adductor Magnus",
-    "Adductor Longus",
-    "Adductor Brevis"
+    "Glutes",
+    "Quads"
   ],
-  "equipment_used": [
-    "Hip Adductor Machine",
-    "Resistance Band"
-  ],
+  "equipment_used": [],
   "alternative_names": [
-    "Hip Abduction",
-    "Thigh Abduction"
+    "Clamshell Exercise",
+    "Side Lying Hip Abduction"
   ]
 }

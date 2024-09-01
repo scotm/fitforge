@@ -1,19 +1,13 @@
 {
   "name": "Wall Drills",
-  "how_to_perform": "1. Stand with your back against a wall, feet shoulder-width apart and at least 12 inches away from the wall.\n2. Slowly slide your back down the wall, keeping your shoulders, ears, and buttocks aligned, until you're in a squatting position.\n3. Hold this position for a brief moment to ensure proper alignment and engage your core muscles (if needed, use a mirror to correct form).\n4. Push back up against the wall, extending your hips and legs fully into standing position.\n5. Repeat this up-and-down motion multiple times for increased range of motion, strength development, and flexibility, but avoid bouncing or over-pressing yourself.\n6. Take breaks as necessary between repetitions and consider adding variations (such as shuffling, crossing one foot in front of the other, etc.) to make the movement more engaging.",
-  "short_summary": "Wall drills involve sliding back against a wall or stationary object while keeping proper form and alignment to develop strength and improve mobility.",
+  "category": "Cardio",
+  "how_to_perform": "1. Stand with your feet shoulder-width apart and your back against the wall.\n2. Make sure to keep your body aligned with the wall, without any inclination or rotation. Engage your core muscles by drawing in your belly button towards your spine.\n3. Perform a series of small steps forward while maintaining the straight line from head to heels. Take about 20-30 inches (50-75 cm) back for each step.\n4. Take about 15-20 seconds to complete one drill, depending on how fast or slow you go. You can walk in multiple directions (side-to-side, front-and-back).\n5. Repeat the process for a total of 3-5 sets with 1-2 minutes of rest between drills.",
+  "short_summary": "Wall Drills is a low-impact exercise used to improve cardiovascular endurance and increase agility while strengthening core muscles.",
   "muscles_used": [
-    "Core",
+    "Calves",
     "Glutes",
-    "Quadriceps",
-    "Hamstrings",
-    "Calves"
+    "Shoulders"
   ],
-  "equipment_used": [
-    "Wall or stationary object for support"
-  ],
-  "alternative_names": [
-    "Bodyweight Squat Wall Drills",
-    "Shallow Squat Drill"
-  ]
+  "equipment_used": [],
+  "alternative_names": []
 }

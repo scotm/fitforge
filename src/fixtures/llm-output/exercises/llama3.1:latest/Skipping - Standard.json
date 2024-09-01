@@ -1,13 +1,16 @@
 {
   "name": "Skipping - Standard",
-  "how_to_perform": "1. Start by standing with your feet shoulder-width apart, toes pointing slightly outward.\n\n2. Begin to swing one leg forward in a circular motion, as if running on the spot. Land softly on the ball of the foot and spring upward to propel the next step.\n\n3. Swing the other leg forward to meet the first leg, keeping them close together while still landing lightly on the balls of your feet.\n\n4. Continue alternating legs at a moderate pace, focusing on quick turnover of each step. Keep your arms relaxed by your sides or let them swing freely.\n\n5. Maintain proper posture and keep your core engaged throughout the exercise to get the most out of it.\n\n6. Breathe naturally while skipping, in sync with the rhythm of the movement. Focus on efficient energy transmission from one foot to the next.",
-  "short_summary": "The standard skip is an aerobic exercise that involves alternate stepping between both legs, using a smooth and continuous motion.",
+  "category": "Cardio",
+  "how_to_perform": "\n1. Start by bending your knees and swinging one foot forward while keeping your other foot on the ground.\n2. Push off the ground with the foot that was on the ground, causing you to jump into the air.\n3. Land softly on both feet, bending your knees once again to absorb the impact of landing.\n4. Repeat the motion with the opposite leg, swapping which foot is swinging forward and which is holding on the ground.\n5. Continue alternating legs as quickly as possible while keeping your upper body relaxed and your back straight.\n6. As you build speed, try to maintain a rhythmic cadence and focus on pumping your arms in coordination with the movement of your legs,\n7. Repeat for the desired number of repetitions or duration.",
+  "short_summary": "Skipping is a cardio exercise that primarily works the cardiovascular system, improving endurance and stamina while engaging various lower body muscles",
   "muscles_used": [
     "Calves",
-    "Gastrocnemius",
-    "Tibialis Anterior",
-    "Peroneals"
+    "Quads",
+    "Hamstrings"
   ],
   "equipment_used": [],
-  "alternative_names": []
+  "alternative_names": [
+    "Jumping Rope (airborne)",
+    "High Knees"
+  ]
 }

@@ -1,17 +1,15 @@
 {
   "name": "Upright Row, SZ-bar",
-  "how_to_perform": "1. Hold an SZ-bar with a pronated grip ( palms facing away from your body) and stand with your feet shoulder-width apart.\n\n2. Keeping your back straight and core engaged, lift the bar up to chest height by bending at the elbows and keeping your upper arms still. Focus on squeezing your shoulder muscles at the top of the movement.\n\n3. Lower the bar down to the starting position in a controlled manner, keeping your elbows close to your body.\n\n4. Repeat for the desired number of repetitions, focusing on using your shoulders and back muscles to lift the bar.\n\n5. Rest when finished.",
-  "short_summary": "The upright row is an upper body exercise that targets the trapezius, rhomboids, and other shoulder muscles",
+  "category": "Back",
+  "how_to_perform": "1. Hold the SZ-bar with an overhand grip, hands shoulder-width apart.\n2. Keeping your back straight and engaging your core, lift the bar out of a downward position to a neutral point alongside your thighs.\n3. Keeping your elbows close to your body and avoiding swinging the bar up, focus on squeezing your shoulders blades together to isolate the muscles in your upper back.\n4. Hold for a brief moment to maintain tension throughout the range of motion.\n5. Slowly return the bar to its starting position, extending through your entire movement to emphasize control and proper form.",
+  "short_summary": "Upright Row is an isolation exercise primarily targeting the shoulders, traps, and upper back muscles using an SZ-bar.",
   "muscles_used": [
-    "Trapezius",
-    "Rhomboids",
+    "Traps",
     "Shoulders",
-    "Back"
+    "Rhomboids"
   ],
   "equipment_used": [
     "SZ-bar"
   ],
-  "alternative_names": [
-    "Standing Upright Row"
-  ]
+  "alternative_names": []
 }
